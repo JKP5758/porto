@@ -17,20 +17,10 @@
 </head>
 
 <body>
-    <header class="bg-white shadow">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-            <h1 class="text-xl font-bold text-gray-800">MyWebsite</h1>
-            <nav class="space-x-4">
-                <a href="#" class="text-gray-600 hover:text-blue-500">Home</a>
-                <a href="#" class="text-gray-600 hover:text-blue-500">About</a>
-                <a href="#" class="text-gray-600 hover:text-blue-500">Contact</a>
-            </nav>
-            <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Login</a>
-        </div>
-    </header>
+    <?php include '../components/header.php'; ?>
 
     <!-- Section -->
-    <section class="py-16 border border-pink-500 px-4">
+    <section class="py-16  px-4">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[auto_1fr_auto] items-center gap-4">
 
             <!-- Tombol kiri -->
@@ -38,36 +28,43 @@
                 ◀
             </button>
 
-            <!-- Hero content -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border border-black bg-cover bg-center rounded-2xl overflow-hidden px-6 py-8" style="background-image: url('../assets/img/bg.png');">
+            <div class="relative overflow-hidden rounded-2xl">
 
-                <!-- Bagian A -->
-                <div class="flex flex-col justify-center space-y-6 border-2 border-red-500 p-4 h-full ">
+                <!-- Background Blur Layer -->
+                <div class="absolute inset-0 bg-cover bg-center scale-110 bg-black/20" style="background-image: url('../assets/img/bg.png');"></div>
 
-                    <!-- A1: Judul Besar -->
-                    <div class="border border-blue-500">
-                        <h1 class="text-4xl font-bold text-gray-800">Judul Besar di Sini</h1>
+
+                <!-- Hero content -->
+                <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 px-6 py-8 backdrop-blur-sm  bg-black/25">
+                    <!-- Bagian A -->
+                    <div class="flex flex-col justify-center space-y-6  p-4 h-full ">
+
+                        <!-- A1: Judul Besar -->
+                        <div class="">
+                            <h1 class="text-4xl font-bold text-white"><span class="text-2xl text-sky-400" style="text-shadow: 1px 1px 2px rgba(0,0, 0, 0.5);">よぉ、みな！</span><br>Namaku JKP</h1>
+                        </div>
+
+                        <!-- A2: Deskripsi Singkat -->
+                        <div class="">
+                            <p class="text-white">Aku adalah seorang programmer pemula yang masih belajar dalam web desain dan cyber security.</p>
+                        </div>
+
+                        <!-- A3: Tombol Read More (rata kanan) -->
+                        <div class="text-right font-bold">
+                            <a href="#" class="group relative inline-block text-white transition-colors duration-200 hover:text-white">
+                                Baca Selengkapnya
+                                <span class="absolute left-0 -bottom-1 h-[4px] w-full rounded-full bg-whitetransition-colors duration-200 group-hover:bg-white"></span>
+                            </a>
+                        </div>
+
                     </div>
 
-                    <!-- A2: Deskripsi Singkat -->
-                    <div class="border border-green-500">
-                        <p class="text-gray-600">Ini adalah deskripsi singkat yang menjelaskan isi dari hero section secara padat dan jelas.</p>
+                    <!-- Bagian B: Ilustrasi -->
+                    <div class=" p-4 flex items-center justify-center">
+                        <img src="../assets/img/Rem.png" alt="Ilustrasi Karakter" class="max-h-72 object-contain drop-shadow-lg transition-transform duration-300 hover:scale-105 animate-pop-in" />
                     </div>
 
-                    <!-- A3: Tombol Read More (rata kanan) -->
-                    <div class="border border-yellow-500 text-right">
-                        <a href="#" class="inline-block bg-blue-500 text-white px-5 py-2 rounded hover:bg-blue-600">Read more</a>
-                    </div>
                 </div>
-
-                <!-- Bagian B: Ilustrasi -->
-                <div class="border-2 border-purple-500 p-4 flex items-center justify-center">
-                    <!-- Placeholder ilustrasi -->
-                    <div class="w-full h-64 bg-gray-100 border-4 border-dashed border-gray-400 flex items-center justify-center">
-                        <span class="text-gray-500">[Ilustrasi di sini]</span>
-                    </div>
-                </div>
-
             </div>
 
             <button class="hidden md:block bg-white rounded-full p-2 shadow hover:bg-gray-100">
@@ -84,7 +81,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 border-2 border-red-500 p-4">
 
                 <!-- A1: Web List -->
-                <div class="flex flex-col justify-between space-y-4 border-2 border-blue-500 p-4">
+                <div class="flex flex-col justify-start space-y-4 border-2 border-blue-500 p-4">
                     <!-- Title -->
                     <h2 class="text-2xl font-bold border border-cyan-500">Web List</h2>
 
@@ -105,14 +102,23 @@
                     </div>
                 </div>
 
-                <!-- A2: List Web (5 list button-like) -->
-                <div class="space-y-2 border-2 border-purple-500 p-4">
-                    <button class="w-full bg-gray-100 p-2 rounded hover:bg-gray-200">Website 1</button>
-                    <button class="w-full bg-gray-100 p-2 rounded hover:bg-gray-200">Website 2</button>
-                    <button class="w-full bg-gray-100 p-2 rounded hover:bg-gray-200">Website 3</button>
-                    <button class="w-full bg-gray-100 p-2 rounded hover:bg-gray-200">Website 4</button>
-                    <button class="w-full bg-gray-100 p-2 rounded hover:bg-gray-200">Website 5</button>
+                <!-- A2: Web List -->
+                <div class="flex flex-col justify-start space-y-4 border-2 border-purple-500 p-4">
+
+                    <!-- Title -->
+                    <h2 class="text-2xl font-bold border border-pink-400">Skills</h2>
+
+                    <!-- List button-like -->
+                    <div class="space-y-2 border border-indigo-400">
+                        <button class="w-full bg-gray-100 p-2 rounded hover:bg-gray-200">Skill 1</button>
+                        <button class="w-full bg-gray-100 p-2 rounded hover:bg-gray-200">Skill 2</button>
+                        <button class="w-full bg-gray-100 p-2 rounded hover:bg-gray-200">Skill 3</button>
+                        <button class="w-full bg-gray-100 p-2 rounded hover:bg-gray-200">Skill 4</button>
+                        <button class="w-full bg-gray-100 p-2 rounded hover:bg-gray-200">Skill 5</button>
+                    </div>
+
                 </div>
+
 
             </div>
 
@@ -155,11 +161,19 @@
                             <p class="text-sm text-gray-600">Deskripsi singkat 3</p>
                         </div>
                     </div>
+
+                    <!-- List 4 -->
+                    <div class="flex items-start space-x-3 border border-gray-300 p-2 rounded">
+                        <div class="w-12 h-12 bg-gray-300 flex-shrink-0">🖥️</div>
+                        <div>
+                            <p class="font-semibold">Judul 4</p>
+                            <p class="text-sm text-gray-600">Deskripsi singkat 4</p>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
-
-        </div>
     </section>
 
     <section class="py-16 px-4 bg-white">
@@ -192,7 +206,51 @@
         </div>
     </section>
 
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">Hubungi Saya</h2>
 
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Kontak Langsung -->
+                <div class="space-y-4">
+                    <p class="text-gray-700">Saya selalu terbuka untuk proyek baru, kolaborasi, atau hanya sekedar ngobrol santai 😄</p>
+                    <div>
+                        <p class="font-semibold">📧 Email:</p>
+                        <p class="text-gray-600">kakak@example.com</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold">💬 WhatsApp:</p>
+                        <p class="text-gray-600">+62 812-3456-7890</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold">🌐 GitHub:</p>
+                        <a href="https://github.com/kakak" target="_blank" class="text-blue-500 hover:underline">github.com/kakak</a>
+                    </div>
+                </div>
+
+                <!-- Form Kontak -->
+                <form action="#" method="POST" class="space-y-4 bg-white p-6 rounded-xl shadow border border-gray-200">
+                    <div>
+                        <label class="block font-semibold mb-1" for="name">Nama</label>
+                        <input type="text" id="name" name="name" class="w-full p-2 border rounded" required>
+                    </div>
+                    <div>
+                        <label class="block font-semibold mb-1" for="email">Email</label>
+                        <input type="email" id="email" name="email" class="w-full p-2 border rounded" required>
+                    </div>
+                    <div>
+                        <label class="block font-semibold mb-1" for="message">Pesan</label>
+                        <textarea id="message" name="message" rows="4" class="w-full p-2 border rounded" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Kirim Pesan</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <?php include '../components/footer.php'; ?>
 
 </body>
 
