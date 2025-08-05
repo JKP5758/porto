@@ -1,5 +1,63 @@
 @import "tailwindcss";
 
+.nav-link {
+  @apply relative text-gray-800 hover:text-sky-600 transition-colors duration-300;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transform: scaleX(0);
+  transform-origin: center;
+  height: 2px;
+  width: 100%;
+  background-color: theme('colors.sky.500');
+  transition: transform 0.3s ease-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
 @theme {
     --breakpoint-tablet: 40rem;
+
+    --animate-fade-in-down: fade-in-down 0.6s ease-out;
+
+    @keyframes fade-in-down {
+        0% {
+        opacity: 0;
+        transform: translateY(-10px);
+        }
+        100% {
+        opacity: 1;
+        transform: translateY(0);
+        }
+    }
+
+    --animate-underline-grow: underline-grow 0.3s ease-out forwards;
+
+    @keyframes underline-grow {
+        from {
+        transform: scaleX(0);
+        }
+        to {
+        transform: scaleX(1);
+        }
+    }
+
+    --animate-pop-in: pop-in 0.4s ease-out;
+
+    @keyframes pop-in {
+        0% {
+        transform: translateY(30px);
+        opacity: 0;
+        }
+        100% {
+        transform: translateY(0);
+        opacity: 1;
+        }
+    }
 }
