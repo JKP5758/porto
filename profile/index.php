@@ -14,6 +14,7 @@
             font-family: 'Inter', sans-serif;
         }
     </style>
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css" />
 </head>
 
 <body>
@@ -259,35 +260,46 @@
 
 
 
-    <section class="py-16 px-4 bg-white">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-2xl font-bold mb-8 text-center">Sertifikat Pencapaian</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <section id="sertifikat" class="py-20 px-4 bg-gradient-to-b from-white via-sky-50 to-white">
+        <div class="max-w-screen-lg mx-auto text-center">
+            <h2 class="text-3xl font-bold text-sky-700 mb-2">Sertifikat Pencapaian 🏆</h2>
+            <div class="w-16 h-1 bg-sky-500 mx-auto rounded-full mb-6"></div>
+            <p class="text-gray-600 mb-10 text-sm sm:text-base">Beberapa penghargaan dan bukti kontribusi dalam dunia teknologi & pengembangan.</p>
 
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <!-- Sertifikat 1 -->
-                <div class="bg-white border rounded-xl shadow p-4 flex flex-col">
-                    <img src="../assets/img/sertifikat1.jpg" alt="Sertifikat 1" class="w-full h-48 object-cover rounded mb-4">
-                    <h3 class="font-semibold text-lg">PHP Mastery</h3>
-                    <p class="text-sm text-gray-600">Diselenggarakan oleh Dicoding, 2024</p>
+                <div class=" mb-4">
+                    <a href="../assets/img/gamelab_certificate.webp" data-pswp-width="3508" data-pswp-height="2480" target="_blank">
+                        <img src="../assets/img/gamelab_certificate.webp" alt="Sertifikat Gamelab"
+                            class="rounded-lg shadow-md hover:shadow-sky-400/40 hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-zoom-in" />
+                    </a>
+                    <p class="text-base italic text-gray-600 mt-4 sm:mt-6 tracking-wide">Sertifikat Gamelab</p>
                 </div>
 
                 <!-- Sertifikat 2 -->
-                <div class="bg-white border rounded-xl shadow p-4 flex flex-col">
-                    <img src="../assets/img/sertifikat2.jpg" alt="Sertifikat 2" class="w-full h-48 object-cover rounded mb-4">
-                    <h3 class="font-semibold text-lg">Linux Fundamental</h3>
-                    <p class="text-sm text-gray-600">FreeCodeCamp, 2023</p>
+                <div class=" mb-4">
+                    <a href="../assets/img/project01.webp">
+                        <img src="../assets/img/project01.webp" alt="Sertifikat 2"
+                            class="rounded-lg shadow-md hover:shadow-yellow-400/40 hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-zoom-in" />
+                    </a>
+                    <p class="text-base italic text-gray-600 mt-4 sm:mt-6 tracking-wide">Sertifikat Gamelab</p>
                 </div>
 
                 <!-- Sertifikat 3 -->
-                <div class="bg-white border rounded-xl shadow p-4 flex flex-col">
-                    <img src="../assets/img/sertifikat3.jpg" alt="Sertifikat 3" class="w-full h-48 object-cover rounded mb-4">
-                    <h3 class="font-semibold text-lg">Network Engineer</h3>
-                    <p class="text-sm text-gray-600">Cisco Academy, 2024</p>
+                <div class=" mb-4">
+                    <a href="../assets/img/merdeka_siber_certificate.webp" data-pswp-width="5763" data-pswp-height="3842" target="_blank">
+                        <img src="../assets/img/merdeka_siber_certificate.webp" alt="Sertifikat 3"
+                            class="rounded-lg shadow-md hover:shadow-red-400/40 hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-zoom-in" />
+                    </a>
+                    <p class="text-base italic text-gray-600 mt-4 sm:mt-6 tracking-wide">Sertifikat Merdeka Siber</p>
                 </div>
-
             </div>
         </div>
     </section>
+    <!-- PhotoSwipe container -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"></div>
+
+
 
     <section class="py-16 px-4 bg-gray-50">
         <div class="max-w-5xl mx-auto">
@@ -334,6 +346,18 @@
     </section>
 
     <?php include '../components/footer.php'; ?>
+
+    <script type="module">
+        import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.min.js';
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '.grid',
+            children: 'a',
+            pswpModule: () => import('https://unpkg.com/photoswipe@5/dist/photoswipe.esm.min.js')
+        });
+
+        lightbox.init();
+    </script>
 
 </body>
 
