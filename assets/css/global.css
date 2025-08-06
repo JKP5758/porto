@@ -7,18 +7,19 @@
 .nav-link::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 50%;
   bottom: -2px;
-  transform: scaleX(0);
+  transform: translateX(-50%) scaleX(0);
   transform-origin: center;
   height: 2px;
-  width: 100%;
+  width: 80%; /* atau 90% biar lebih panjang */
   background-color: theme('colors.sky.500');
   transition: transform 0.3s ease-out;
 }
 
+
 .nav-link:hover::after {
-  transform: scaleX(1);
+  transform: translateX(-50%) scaleX(1);
 }
 
 @theme {
