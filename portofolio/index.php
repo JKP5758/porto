@@ -29,7 +29,9 @@
         <img
             src="../assets/img/Rem.webp"
             alt=""
-            class="absolute inset-0 w-full h-full object-cover object-center opacity-20 z-0 pointer-events-none" />
+            class="absolute inset-0 w-full h-full object-cover object-center opacity-30 z-0 pointer-events-none"
+            fetchpriority="high"
+        />
 
         <!-- Section -->
         <section class="relative z-10  bg-white/70 py-16  px-4">
@@ -386,14 +388,16 @@
     <?php include '../components/footer.php'; ?>
 
     <script type="module">
-        import PhotoSwipeLightbox from '../assets/js/photoswipe-lightbox.esm.min.js';
+        document.addEventListener("DOMContentLoaded", async () => {
+            const PhotoSwipeLightbox = (await import('../assets/js/photoswipe-lightbox.esm.min.js')).default;
 
-        const lightbox = new PhotoSwipeLightbox({
-            gallery: '.pswp-gallery', // hanya galeri sertifikat!
-            children: 'a',
-            pswpModule: () => import('../assets/js/photoswipe.esm.min.js')
+            const lightbox = new PhotoSwipeLightbox({
+                gallery: '.pswp-gallery',
+                children: 'a',
+                pswpModule: () => import('../assets/js/photoswipe.esm.min.js')
+            });
+            lightbox.init();
         });
-        lightbox.init();
 
         function setupImageRotation(imageIds, imageList, intervalMs) {
             let current = 0;
