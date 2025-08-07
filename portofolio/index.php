@@ -8,13 +8,19 @@
     <meta name="description" content="Ini adalah halaman portfolio saya yang berisi proyek-proyek terbaik saya dalam pengembangan web dan desain.">
     <link rel="icon" type="image/png/ico" href="../assets//img//icons/favico.ico">
     <link href="../assets/css/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css" media="print" onload="this.media='all'">
     <link rel="preload" as="image" href="../assets/img/bg.webp">
     <link rel="preload" as="image" href="../assets/img/Rem.webp">
     <style>
+        @font-face {
+            font-family: 'Inter';
+            src: url('../assets/fonts/Inter-VariableFont_opsz,wght.woff2') format('woff2');
+            font-weight: 100 900;
+            /* karena variable */
+            font-style: normal;
+            font-display: swap;
+        }
+
         body {
             font-family: 'Inter', sans-serif;
         }
@@ -29,9 +35,8 @@
         <img
             src="../assets/img/Rem.webp"
             alt=""
-            class="absolute inset-0 w-full h-full object-cover object-center opacity-30 z-0 pointer-events-none"
-            fetchpriority="high"
-        />
+            class="absolute inset-0 w-full h-full object-cover object-center opacity-25 z-0 pointer-events-none"
+            fetchpriority="high" />
 
         <!-- Section -->
         <section class="relative z-10  bg-white/70 py-16  px-4">
