@@ -97,9 +97,9 @@
                         <div class="flex flex-wrap gap-4">
                             <!-- Card 1 -->
                             <div class="relative group flex-1 min-w-[120px] h-48 bg-white rounded-xl overflow-hidden shadow border border-gray-400 cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
-                                <img id="cardA-img1" src="../assets/img/sample_web/WebA1.webp"
+                                <img id="cardA-img1" src="../assets/img/sample_web/WebA1.webp" alt="Preview Web E-commerce"
                                     class="absolute inset-0 w-full h-48 object-cover transition-opacity duration-1000 opacity-100 group-hover:blur-sm group-hover:brightness-90" />
-                                <img id="cardA-img2" src=""
+                                <img id="cardA-img2" src="" alt=""
                                     class="absolute inset-0 w-full h-48 object-cover transition-opacity duration-1000 opacity-0 group-hover:blur-sm group-hover:brightness-90" />
 
                                 <!-- Overlay gelap bawah (bisa diatur tingginya) -->
@@ -119,9 +119,9 @@
 
                             <!-- Card 2 -->
                             <div class="relative group flex-1 min-w-[120px] h-48 bg-white rounded-xl overflow-hidden shadow border border-gray-400 cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
-                                <img id="cardB-img1" src="../assets/img/sample_web/WebB1.webp"
+                                <img id="cardB-img1" src="../assets/img/sample_web/WebB1.webp" alt="Preview Web Company Profile"
                                     class="absolute inset-0 w-full h-48 object-cover transition-opacity duration-1000 opacity-100 group-hover:blur-sm group-hover:brightness-90" />
-                                <img id="cardB-img2" src=""
+                                <img id="cardB-img2" src="" alt=""
                                     class="absolute inset-0 w-full h-48 object-cover transition-opacity duration-1000 opacity-0 group-hover:blur-sm group-hover:brightness-90" />
 
                                 <!-- Overlay gelap bawah (bisa diatur tingginya) -->
