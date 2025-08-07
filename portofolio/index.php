@@ -386,12 +386,12 @@
     <?php include '../components/footer.php'; ?>
 
     <script type="module">
-        import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.min.js';
+        import PhotoSwipeLightbox from '../assets/js/photoswipe-lightbox.esm.min.js';
 
         const lightbox = new PhotoSwipeLightbox({
             gallery: '.pswp-gallery', // hanya galeri sertifikat!
             children: 'a',
-            pswpModule: () => import('https://unpkg.com/photoswipe@5/dist/photoswipe.esm.min.js')
+            pswpModule: () => import('../assets/js/photoswipe.esm.min.js')
         });
         lightbox.init();
 
