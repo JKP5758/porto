@@ -13,6 +13,7 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css" media="print" onload="this.media='all'">
     <link rel="preload" as="image" href="../assets/img/bg.webp">
+    <link rel="preload" as="image" href="../assets/img/Rem.webp">
     <style>
         body {
             font-family: 'Inter', sans-serif;
