@@ -314,7 +314,7 @@
 
 
     <section id="kontak-section" class="py-16 px-4 relative bg-cover bg-center bg-no-repeat">
-        <div class="max-w-5xl mx-auto backdrop-blur-md bg-black/30 border border-white/20 rounded-2xl p-8 shadow-lg">
+        <div class="max-w-5xl mx-auto backdrop-blur-sm bg-black/40 border border-white/20 rounded-2xl p-8 shadow-lg">
             <h2 class="text-3xl font-bold mb-8 text-center text-white drop-shadow-md">Hubungi Saya</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -330,7 +330,7 @@
                     <div class="space-y-4">
 
                         <!-- Email -->
-                        <div class="flex items-center gap-3 p-4 rounded-lg bg-black/40 backdrop-blur-sm border border-white/20 hover:scale-105 transition">
+                        <div class="flex items-center gap-3 p-4 rounded-lg bg-stone-300/10 border border-white/20 hover:scale-105 transition">
                             <img src="../assets/img/icons/gmail.svg" alt="Email" class="w-6 h-6" />
                             <div>
                                 <p class="text-white font-semibold drop-shadow-sm">Email</p>
@@ -339,7 +339,7 @@
                         </div>
 
                         <!-- WhatsApp -->
-                        <div class="flex items-center gap-3 p-4 rounded-lg bg-black/40 backdrop-blur-sm border border-white/20 hover:scale-105 transition">
+                        <div class="flex items-center gap-3 p-4 rounded-lg bg-stone-300/10 border border-white/20 hover:scale-105 transition">
                             <img src="../assets/img/icons/whatsapp.svg" alt="WhatsApp" class="w-6 h-6" />
                             <div>
                                 <p class="text-white font-semibold drop-shadow-sm">WhatsApp</p>
@@ -348,7 +348,7 @@
                         </div>
 
                         <!-- GitHub -->
-                        <div class="flex items-center gap-3 p-4 rounded-lg bg-black/40 backdrop-blur-sm border border-white/20 hover:scale-105 transition">
+                        <div class="flex items-center gap-3 p-4 rounded-lg bg-stone-300/10 border border-white/20 hover:scale-105 transition">
                             <img src="../assets/img/icons/github.svg" alt="GitHub" class="w-6 h-6" />
                             <div>
                                 <p class="text-white font-semibold drop-shadow-sm">GitHub</p>
@@ -362,7 +362,7 @@
                 </div>
 
                 <!-- Form Kontak -->
-                <form action="#" method="POST" class="space-y-4 bg-black/40 backdrop-blur-sm border border-white/20 p-6 rounded-xl shadow">
+                <form action="#" method="POST" class="space-y-4 bg-stone-300/10 border border-white/20 p-6 rounded-xl shadow">
                     <div>
                         <label class="block font-semibold mb-1 text-white drop-shadow-sm" for="name">Nama</label>
                         <input type="text" id="name" name="name" class="w-full p-2 rounded bg-white/80 text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50" required>
@@ -375,14 +375,17 @@
                         <label class="block font-semibold mb-1 text-white drop-shadow-sm" for="message">Pesan</label>
                         <textarea id="message" name="message" rows="4" class="w-full p-2 rounded bg-white/80 text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50" required></textarea>
                     </div>
-                    <button type="submit" class="w-full bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-sky-600 hover:to-indigo-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300">
+                    <button type="submit" class="w-full bg-gradient-to-r from-stone-300/20 to-blue-400/20 hover:from-stone-300/30 hover:to-blue-400/30 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300">
                         Kirim Pesan
                     </button>
+
+
                 </form>
 
             </div>
         </div>
     </section>
+
 
     <?php include '../components/footer.php'; ?>
 
