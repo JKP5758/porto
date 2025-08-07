@@ -9,7 +9,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind-start": "npx @tailwindcss/cli -i ./assets/css/global.css -o ./assets/css/style.css --watch"
+    "tailwind-start": "npx @tailwindcss/cli -i ./assets/css/global.css -o ./assets/css/style.css --watch",
+    "tailwind-build": "npx @tailwindcss/cli -i ./assets/css/global.css -o ./assets/css/style.css --minify"
   },
   "repository": {
     "type": "git",
