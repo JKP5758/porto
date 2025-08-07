@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio</title>
+    <meta name="description" content="Ini adalah halaman portfolio saya yang berisi proyek-proyek terbaik saya dalam pengembangan web dan desain.">
     <link rel="icon" type="image/png/ico" href="../assets//img//icons/favico.ico">
     <link href="../assets/css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" as="image" href="../assets/img/bg.webp">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -37,7 +39,7 @@
                 <div class="relative overflow-hidden rounded-2xl">
 
                     <!-- Background Blur Layer -->
-                    <div rel="preload" class="absolute inset-0 bg-cover bg-center scale-110 bg-black/20" style="background-image: url('../assets/img/bg.webp');"></div>
+                    <div class="absolute inset-0 bg-cover bg-center scale-110 bg-black/20" style="background-image: url('../assets/img/bg.webp');"></div>
 
 
                     <!-- Hero content -->
@@ -80,11 +82,11 @@
             </div>
         </section>
 
-        <section class="relative z-10   bg-white/70 py-16 px-4">
-            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 rounded-xl p-6">
+        <section class="relative z-10   bg-white/70 py-16 px-4 ">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 rounded-xl p-6 max-sm:px-0">
 
                 <!-- A (Kiri) -->
-                <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4  p-4 lg:pr-0">
+                <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4  p-4 lg:pr-0 max-sm:px-0">
 
                     <!-- A1: Web List -->
                     <div class="flex flex-col justify-start space-y-4 p-4 rounded-2xl bg-white">
@@ -94,9 +96,11 @@
                         <!-- 2 Card mendatar (pakai image, ukuran fleksibel) -->
                         <div class="flex flex-wrap gap-4">
                             <!-- Card 1 -->
-                            <div class="relative group flex-1 min-w-[120px] bg-white rounded-xl overflow-hidden shadow border border-gray-400 cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
-                                <!-- Gambar -->
-                                <img src="../assets/img/website.jpg" alt="Web 1" class="w-full h-48 object-cover transition-all duration-300 group-hover:blur-sm group-hover:brightness-90" />
+                            <div class="relative group flex-1 min-w-[120px] h-48 bg-white rounded-xl overflow-hidden shadow border border-gray-400 cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
+                                <img id="cardA-img1" src="../assets/img/sample_web/WebA1.webp"
+                                    class="absolute inset-0 w-full h-48 object-cover transition-opacity duration-1000 opacity-100 group-hover:blur-sm group-hover:brightness-90" />
+                                <img id="cardA-img2" src=""
+                                    class="absolute inset-0 w-full h-48 object-cover transition-opacity duration-1000 opacity-0 group-hover:blur-sm group-hover:brightness-90" />
 
                                 <!-- Overlay gelap bawah (bisa diatur tingginya) -->
                                 <div class="absolute bottom-0 left-0 w-full h-[60%] bg-gradient-to-t from-black to-transparent px-4 flex items-end pb-2">
@@ -114,9 +118,11 @@
 
 
                             <!-- Card 2 -->
-                            <div class="relative group flex-1 min-w-[120px] bg-white rounded-xl overflow-hidden shadow border border-gray-400 cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
-                                <!-- Gambar -->
-                                <img src="../assets/img/website.jpg" alt="Web 1" class="w-full h-48 object-cover transition-all duration-300 group-hover:blur-sm group-hover:brightness-90" />
+                            <div class="relative group flex-1 min-w-[120px] h-48 bg-white rounded-xl overflow-hidden shadow border border-gray-400 cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
+                                <img id="cardB-img1" src="../assets/img/sample_web/WebB1.webp"
+                                    class="absolute inset-0 w-full h-48 object-cover transition-opacity duration-1000 opacity-100 group-hover:blur-sm group-hover:brightness-90" />
+                                <img id="cardB-img2" src=""
+                                    class="absolute inset-0 w-full h-48 object-cover transition-opacity duration-1000 opacity-0 group-hover:blur-sm group-hover:brightness-90" />
 
                                 <!-- Overlay gelap bawah (bisa diatur tingginya) -->
                                 <div class="absolute bottom-0 left-0 w-full h-[60%] bg-gradient-to-t from-black to-transparent px-4 flex items-end pb-2">
@@ -182,7 +188,7 @@
                 </div>
 
                 <!-- B (Kanan) -->
-                <div class=" grid grid-cols-1 lg:grid-cols-3 gap-4 p-4 lg:pl-0">
+                <div class=" grid grid-cols-1 lg:grid-cols-3 gap-4 p-4 lg:pl-0 max-sm:px-0">
 
                     <!-- B1: Logo Instansi -->
                     <div class="flex justify-center flex-col lg:col-span-1 space-y-4 p-4 rounded-2xl bg-white">
@@ -384,6 +390,53 @@
             pswpModule: () => import('https://unpkg.com/photoswipe@5/dist/photoswipe.esm.min.js')
         });
         lightbox.init();
+
+        function setupImageRotation(imageIds, imageList, intervalMs) {
+            let current = 0;
+            const imgA = document.getElementById(imageIds[0]);
+            const imgB = document.getElementById(imageIds[1]);
+            let showingA = true;
+
+            setInterval(() => {
+                current = (current + 1) % imageList.length;
+
+                const nextImg = showingA ? imgB : imgA;
+                const currentImg = showingA ? imgA : imgB;
+
+                nextImg.src = imageList[current];
+                nextImg.classList.add('opacity-100');
+                nextImg.classList.remove('opacity-0');
+
+                currentImg.classList.remove('opacity-100');
+                currentImg.classList.add('opacity-0');
+
+                showingA = !showingA;
+            }, intervalMs);
+        }
+
+        // Setup untuk Card A
+        setupImageRotation(
+            ['cardA-img1', 'cardA-img2'],
+            [
+                '../assets/img/sample_web/WebA2.webp',
+                '../assets/img/sample_web/WebA3.webp',
+                '../assets/img/sample_web/WebA4.webp',
+                '../assets/img/sample_web/WebA1.webp'
+            ],
+            5000
+        );
+
+        // Setup untuk Card B
+        setupImageRotation(
+            ['cardB-img1', 'cardB-img2'],
+            [
+                '../assets/img/sample_web/WebB2.webp',
+                '../assets/img/sample_web/WebB3.webp',
+                '../assets/img/sample_web/WebB4.webp',
+                '../assets/img/sample_web/WebB1.webp'
+            ],
+            5000
+        );
     </script>
 
 </body>
