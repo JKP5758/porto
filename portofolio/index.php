@@ -30,8 +30,7 @@
             src="../assets/img/Rem.webp"
             alt=""
             class="absolute inset-0 w-full h-full object-cover object-center opacity-25 z-0 pointer-events-none"
-            fetchpriority="high"
-        />
+            fetchpriority="high" />
 
         <!-- Section -->
         <section class="relative z-10  bg-white/70 py-16  px-4">
@@ -388,15 +387,27 @@
     <?php include '../components/footer.php'; ?>
 
     <script type="module">
-        document.addEventListener("DOMContentLoaded", async () => {
-            const PhotoSwipeLightbox = (await import('../assets/js/photoswipe-lightbox.esm.min.js')).default;
+        document.addEventListener("DOMContentLoaded", () => {
+            const gallery = document.querySelector('.pswp-gallery');
 
-            const lightbox = new PhotoSwipeLightbox({
-                gallery: '.pswp-gallery',
-                children: 'a',
-                pswpModule: () => import('../assets/js/photoswipe.esm.min.js')
+            if (!gallery) return;
+
+            const observer = new IntersectionObserver(async (entries, observer) => {
+                if (entries[0].isIntersecting) {
+                    const PhotoSwipeLightbox = (await import('../assets/js/photoswipe-lightbox.esm.min.js')).default;
+
+                    const lightbox = new PhotoSwipeLightbox({
+                        gallery: '.pswp-gallery',
+                        children: 'a',
+                        pswpModule: () => import('../assets/js/photoswipe.esm.min.js')
+                    });
+                    lightbox.init();
+
+                    observer.disconnect(); // stop observing setelah diload
+                }
             });
-            lightbox.init();
+
+            observer.observe(gallery);
         });
 
         function setupImageRotation(imageIds, imageList, intervalMs) {
