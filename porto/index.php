@@ -8,7 +8,7 @@
     <link href="../assets/css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -57,7 +57,7 @@
                             <!-- A3: Tombol Read More (rata kanan) -->
                             <div class="text-right font-bold">
                                 <a href="#" class="group relative inline-block text-white transition-colors duration-200 hover:text-white">
-                                    Baca Selengkapnya
+                                    Selengkapnya...
                                     <span class="absolute left-0 -bottom-1 h-[4px] w-full rounded-full bg-whitetransition-colors duration-200 group-hover:bg-white"></span>
                                 </a>
                             </div>
@@ -65,7 +65,7 @@
                         </div>
 
                         <!-- Bagian B: Ilustrasi -->
-                        <div class=" p-4 flex items-center justify-center">
+                        <div class="flex items-center justify-center">
                             <img src="../assets/img/Rem.png" alt="Ilustrasi Karakter" class="max-h-72 object-contain drop-shadow-lg transition-transform duration-300 hover:scale-105 animate-pop-in" />
                         </div>
 
@@ -136,7 +136,7 @@
                         <!-- Tombol View More -->
                         <div class="text-right font-bold">
                             <button class="w-full px-6 py-3 rounded-xl bg-zinc-100 text-zinc-800 shadow-md shadow-zinc-200 transition-all duration-300 hover:bg-zinc-200 hover:text-zinc-900 hover:shadow-zinc-400 hover:shadow-lg hover:scale-[1.03]">
-                                Lihat Lebih
+                                Lihat Selengkapnya
                             </button>
                         </div>
 
@@ -266,7 +266,7 @@
             <div class="w-16 h-1 bg-sky-500 mx-auto rounded-full mb-6"></div>
             <p class="text-gray-600 mb-10 text-sm sm:text-base">Beberapa penghargaan dan bukti kontribusi dalam dunia teknologi & pengembangan.</p>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="pswp-gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <!-- Sertifikat 1 -->
                 <div class=" mb-4">
                     <a href="../assets/img/gamelab_certificate.webp" data-pswp-width="3508" data-pswp-height="2480" target="_blank">
@@ -278,17 +278,17 @@
 
                 <!-- Sertifikat 2 -->
                 <div class=" mb-4">
-                    <a href="../assets/img/project01.webp">
-                        <img src="../assets/img/project01.webp" alt="Sertifikat 2"
+                    <a href="../assets/img/olimpicad_certificate.webp" data-pswp-width="2797" data-pswp-height="1998" target="_blank">
+                        <img src="../assets/img/olimpicad_certificate.webp" alt="Sertifikat OlimpicAD"
                             class="rounded-lg shadow-md hover:shadow-yellow-400/40 hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-zoom-in" />
                     </a>
-                    <p class="text-base italic text-gray-600 mt-4 sm:mt-6 tracking-wide">Sertifikat Gamelab</p>
+                    <p class="text-base italic text-gray-600 mt-4 sm:mt-6 tracking-wide">Sertifikat OlimpicAD</p>
                 </div>
 
                 <!-- Sertifikat 3 -->
                 <div class=" mb-4">
                     <a href="../assets/img/merdeka_siber_certificate.webp" data-pswp-width="5763" data-pswp-height="3842" target="_blank">
-                        <img src="../assets/img/merdeka_siber_certificate.webp" alt="Sertifikat 3"
+                        <img src="../assets/img/merdeka_siber_certificate.webp" alt="Sertifikat Merdeka Siber"
                             class="rounded-lg shadow-md hover:shadow-red-400/40 hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-zoom-in" />
                     </a>
                     <p class="text-base italic text-gray-600 mt-4 sm:mt-6 tracking-wide">Sertifikat Merdeka Siber</p>
@@ -301,44 +301,71 @@
 
 
 
-    <section class="py-16 px-4 bg-gray-50">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl font-bold mb-8 text-center">Hubungi Saya</h2>
+    <section class="py-16 px-4 relative bg-[url('../../assets/img/bg-kontak.png')] bg-cover bg-center bg-no-repeat">
+        <div class="max-w-5xl mx-auto backdrop-blur-md bg-black/30 border border-white/20 rounded-2xl p-8 shadow-lg">
+            <h2 class="text-3xl font-bold mb-8 text-center text-white drop-shadow-md">Hubungi Saya</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
                 <!-- Kontak Langsung -->
-                <div class="space-y-4">
-                    <p class="text-gray-700">Saya selalu terbuka untuk proyek baru, kolaborasi, atau hanya sekedar ngobrol santai 😄</p>
-                    <div>
-                        <p class="font-semibold">📧 Email:</p>
-                        <p class="text-gray-600">kakak@example.com</p>
-                    </div>
-                    <div>
-                        <p class="font-semibold">💬 WhatsApp:</p>
-                        <p class="text-gray-600">+62 812-3456-7890</p>
-                    </div>
-                    <div>
-                        <p class="font-semibold">🌐 GitHub:</p>
-                        <a href="https://github.com/kakak" target="_blank" class="text-blue-500 hover:underline">github.com/kakak</a>
+                <div class="space-y-6">
+                    <!-- Pembuka -->
+                    <p class="text-white text-base leading-relaxed drop-shadow-sm">
+                        Saya selalu terbuka untuk proyek baru, kolaborasi, atau hanya sekadar ngobrol santai ✨
+                    </p>
+
+                    <!-- Kontak List -->
+                    <div class="space-y-4">
+
+                        <!-- Email -->
+                        <div class="flex items-center gap-3 p-4 rounded-lg bg-black/40 backdrop-blur-sm border border-white/20 hover:scale-105 transition">
+                            <img src="../assets/img/icons/gmail.svg" alt="Email" class="w-6 h-6" />
+                            <div>
+                                <p class="text-white font-semibold drop-shadow-sm">Email</p>
+                                <p class="text-white/90 drop-shadow-sm">jokopurnomo22012006@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <!-- WhatsApp -->
+                        <div class="flex items-center gap-3 p-4 rounded-lg bg-black/40 backdrop-blur-sm border border-white/20 hover:scale-105 transition">
+                            <img src="../assets/img/icons/whatsapp.svg" alt="WhatsApp" class="w-6 h-6" />
+                            <div>
+                                <p class="text-white font-semibold drop-shadow-sm">WhatsApp</p>
+                                <p class="text-white/90 drop-shadow-sm">+62 812-3456-7890</p>
+                            </div>
+                        </div>
+
+                        <!-- GitHub -->
+                        <div class="flex items-center gap-3 p-4 rounded-lg bg-black/40 backdrop-blur-sm border border-white/20 hover:scale-105 transition">
+                            <img src="../assets/img/icons/github.svg" alt="GitHub" class="w-6 h-6" />
+                            <div>
+                                <p class="text-white font-semibold drop-shadow-sm">GitHub</p>
+                                <a href="https://github.com/JKP5758" class="text-white/90 hover:underline hover:text-white drop-shadow-sm transition duration-300">
+                                    github.com/JKP5758
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
                 <!-- Form Kontak -->
-                <form action="#" method="POST" class="space-y-4 bg-white p-6 rounded-xl shadow border border-gray-200">
+                <form action="#" method="POST" class="space-y-4 bg-black/40 backdrop-blur-sm border border-white/20 p-6 rounded-xl shadow">
                     <div>
-                        <label class="block font-semibold mb-1" for="name">Nama</label>
-                        <input type="text" id="name" name="name" class="w-full p-2 border rounded" required>
+                        <label class="block font-semibold mb-1 text-white drop-shadow-sm" for="name">Nama</label>
+                        <input type="text" id="name" name="name" class="w-full p-2 rounded bg-white/80 text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50" required>
                     </div>
                     <div>
-                        <label class="block font-semibold mb-1" for="email">Email</label>
-                        <input type="email" id="email" name="email" class="w-full p-2 border rounded" required>
+                        <label class="block font-semibold mb-1 text-white drop-shadow-sm" for="email">Email</label>
+                        <input type="email" id="email" name="email" class="w-full p-2 rounded bg-white/80 text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50" required>
                     </div>
                     <div>
-                        <label class="block font-semibold mb-1" for="message">Pesan</label>
-                        <textarea id="message" name="message" rows="4" class="w-full p-2 border rounded" required></textarea>
+                        <label class="block font-semibold mb-1 text-white drop-shadow-sm" for="message">Pesan</label>
+                        <textarea id="message" name="message" rows="4" class="w-full p-2 rounded bg-white/80 text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50" required></textarea>
                     </div>
-                    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Kirim Pesan</button>
+                    <button type="submit" class="w-full bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-sky-600 hover:to-indigo-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300">
+                        Kirim Pesan
+                    </button>
                 </form>
 
             </div>
@@ -351,11 +378,10 @@
         import PhotoSwipeLightbox from 'https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.min.js';
 
         const lightbox = new PhotoSwipeLightbox({
-            gallery: '.grid',
+            gallery: '.pswp-gallery', // hanya galeri sertifikat!
             children: 'a',
             pswpModule: () => import('https://unpkg.com/photoswipe@5/dist/photoswipe.esm.min.js')
         });
-
         lightbox.init();
     </script>
 
