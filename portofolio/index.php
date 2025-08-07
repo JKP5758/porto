@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css" media="print" onload="this.media='all'">
-    <link rel="preload" as="image" href="../assets/img/bg.webp">
     <link rel="preload" as="image" href="../assets/img/Rem.webp">
+    <link rel="preload" as="image" href="../assets/img/bg.webp">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -30,7 +30,7 @@
             src="../assets/img/Rem.webp"
             alt=""
             class="absolute inset-0 w-full h-full object-cover object-center opacity-25 z-0 pointer-events-none"
-            fetchpriority="high" />
+            aria-hidden="true" />
 
         <!-- Section -->
         <section class="relative z-10  bg-white/70 py-16  px-4">
@@ -74,7 +74,7 @@
 
                         <!-- Bagian B: Ilustrasi -->
                         <div class="max-h-72 aspect-[1/1] w-auto">
-                            <img src="../assets/img/Rem.webp" alt="Ilustrasi Karakter" class="h-full w-auto object-contain drop-shadow-lg transition-transform duration-300 hover:scale-105 animate-pop-in" />
+                            <img src="../assets/img/Rem.webp" alt="Ilustrasi Karakter" class="h-full w-auto object-contain drop-shadow-lg transition-transform duration-300 hover:scale-105 animate-pop-in" loading="eager">
                         </div>
 
                     </div>
@@ -313,7 +313,7 @@
 
 
 
-    <section class="py-16 px-4 relative bg-[url('../../assets/img/bg-kontak.webp')] bg-cover bg-center bg-no-repeat">
+    <section id="kontak-section" class="py-16 px-4 relative bg-cover bg-center bg-no-repeat">
         <div class="max-w-5xl mx-auto backdrop-blur-md bg-black/30 border border-white/20 rounded-2xl p-8 shadow-lg">
             <h2 class="text-3xl font-bold mb-8 text-center text-white drop-shadow-md">Hubungi Saya</h2>
 
@@ -408,6 +408,25 @@
             });
 
             observer.observe(gallery);
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const kontakSection = document.getElementById("kontak-section");
+
+            if (!kontakSection) return;
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                if (entries[0].isIntersecting) {
+                    kontakSection.style.backgroundImage = "url('../assets/img/bg-kontak.webp')";
+                    kontakSection.style.backgroundSize = "cover";
+                    kontakSection.style.backgroundRepeat = "no-repeat";
+                    kontakSection.style.backgroundPosition = "center";
+
+                    observer.unobserve(kontakSection); // Stop observing setelah dimuat
+                }
+            });
+
+            observer.observe(kontakSection);
         });
 
         function setupImageRotation(imageIds, imageList, intervalMs) {
