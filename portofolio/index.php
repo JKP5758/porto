@@ -73,8 +73,8 @@
                         </div>
 
                         <!-- Bagian B: Ilustrasi -->
-                        <div class="flex items-center justify-center">
-                            <img src="../assets/img/Rem.webp" alt="Ilustrasi Karakter" class="max-h-72 object-contain drop-shadow-lg transition-transform duration-300 hover:scale-105 animate-pop-in" />
+                        <div class="max-h-72 aspect-[1/1] w-auto">
+                            <img src="../assets/img/Rem.webp" alt="Ilustrasi Karakter" class="h-full w-auto object-contain drop-shadow-lg transition-transform duration-300 hover:scale-105 animate-pop-in" />
                         </div>
 
                     </div>
