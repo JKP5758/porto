@@ -11,21 +11,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css" media="print" onload="this.media='all'">
     <link rel="preload" as="image" href="../assets/img/bg.webp">
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
     </style>
-    <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css" />
 </head>
 
 <body>
     <?php include '../components/header.php'; ?>
 
     <div class="relative">
-        <div class="absolute inset-0 bg-[url('../../assets/img/Rem.webp')] bg-no-repeat bg-center bg-cover opacity-20 z-0 pointer-events-none"></div>
-
+        <!-- Background Image -->
+        <img
+            src="../assets/img/Rem.webp"
+            alt=""
+            class="absolute inset-0 w-full h-full object-cover object-center opacity-20 z-0 pointer-events-none" />
 
         <!-- Section -->
         <section class="relative z-10  bg-white/70 py-16  px-4">
@@ -277,7 +280,7 @@
                 <!-- Sertifikat 1 -->
                 <div class=" mb-4">
                     <a href="../assets/img/gamelab_certificate.webp" data-pswp-width="3055" data-pswp-height="2160" target="_blank">
-                        <img src="../assets/img/gamelab_certificate.webp" alt="Sertifikat Gamelab"
+                        <img src="../assets/img/compress/gamelab_certificate.webp" alt="Sertifikat Gamelab"
                             class="rounded-lg shadow-md hover:shadow-sky-400/40 hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-zoom-in" />
                     </a>
                     <p class="text-base italic text-gray-600 mt-4 sm:mt-6 tracking-wide">Sertifikat Gamelab</p>
@@ -286,7 +289,7 @@
                 <!-- Sertifikat 2 -->
                 <div class=" mb-4">
                     <a href="../assets/img/olimpicad_certificate.webp" data-pswp-width="3096" data-pswp-height="2160" target="_blank">
-                        <img src="../assets/img/olimpicad_certificate.webp" alt="Sertifikat OlimpicAD"
+                        <img src="../assets/img/compress/olimpicad_certificate.webp" alt="Sertifikat OlimpicAD"
                             class="rounded-lg shadow-md hover:shadow-yellow-400/40 hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-zoom-in" />
                     </a>
                     <p class="text-base italic text-gray-600 mt-4 sm:mt-6 tracking-wide">Sertifikat OlimpicAD</p>
@@ -295,7 +298,7 @@
                 <!-- Sertifikat 3 -->
                 <div class=" mb-4">
                     <a href="../assets/img/merdeka_siber_certificate.webp" data-pswp-width="3240" data-pswp-height="2160" target="_blank">
-                        <img src="../assets/img/merdeka_siber_certificate.webp" alt="Sertifikat Merdeka Siber"
+                        <img src="../assets/img/compress/merdeka_siber_certificate.webp" alt="Sertifikat Merdeka Siber"
                             class="rounded-lg shadow-md hover:shadow-red-400/40 hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-zoom-in" />
                     </a>
                     <p class="text-base italic text-gray-600 mt-4 sm:mt-6 tracking-wide">Sertifikat Merdeka Siber</p>
