@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Portofolio</title>
+    <link rel="icon" type="image/png/ico" href="../assets//img//icons/favico.ico">
     <link href="../assets/css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +22,7 @@
     <?php include '../components/header.php'; ?>
 
     <div class="relative">
-        <div class="absolute inset-0 bg-[url('../../assets/img/Rem.png')] bg-no-repeat bg-center bg-cover opacity-20 z-0 pointer-events-none"></div>
+        <div class="absolute inset-0 bg-[url('../../assets/img/Rem.webp')] bg-no-repeat bg-center bg-cover opacity-20 z-0 pointer-events-none"></div>
 
 
         <!-- Section -->
@@ -36,7 +37,7 @@
                 <div class="relative overflow-hidden rounded-2xl">
 
                     <!-- Background Blur Layer -->
-                    <div class="absolute inset-0 bg-cover bg-center scale-110 bg-black/20" style="background-image: url('../assets/img/bg.png');"></div>
+                    <div rel="preload" class="absolute inset-0 bg-cover bg-center scale-110 bg-black/20" style="background-image: url('../assets/img/bg.webp');"></div>
 
 
                     <!-- Hero content -->
@@ -66,7 +67,7 @@
 
                         <!-- Bagian B: Ilustrasi -->
                         <div class="flex items-center justify-center">
-                            <img src="../assets/img/Rem.png" alt="Ilustrasi Karakter" class="max-h-72 object-contain drop-shadow-lg transition-transform duration-300 hover:scale-105 animate-pop-in" />
+                            <img src="../assets/img/Rem.webp" alt="Ilustrasi Karakter" class="max-h-72 object-contain drop-shadow-lg transition-transform duration-300 hover:scale-105 animate-pop-in" />
                         </div>
 
                     </div>
@@ -100,13 +101,13 @@
                                 <!-- Overlay gelap bawah (bisa diatur tingginya) -->
                                 <div class="absolute bottom-0 left-0 w-full h-[60%] bg-gradient-to-t from-black to-transparent px-4 flex items-end pb-2">
                                     <h3 class="text-white text-sm font-semibold mb-1 transition-opacity duration-300 group-hover:opacity-0">
-                                        Project Web 1
+                                        E-commerce
                                     </h3>
                                 </div>
 
                                 <!-- Deskripsi muncul saat hover -->
                                 <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
-                                    <p class="text-white text-sm">Ini adalah detail project website 1 yang dibuat menggunakan Tailwind & PHP.</p>
+                                    <p class="text-white text-sm">Pembuatan website sistem jual beli buku untuk Toko buku</p>
                                 </div>
                             </div>
 
@@ -120,13 +121,13 @@
                                 <!-- Overlay gelap bawah (bisa diatur tingginya) -->
                                 <div class="absolute bottom-0 left-0 w-full h-[60%] bg-gradient-to-t from-black to-transparent px-4 flex items-end pb-2">
                                     <h3 class="text-white text-sm font-semibold mb-1 transition-opacity duration-300 group-hover:opacity-0">
-                                        Project Web 1
+                                        Company Profile
                                     </h3>
                                 </div>
 
                                 <!-- Deskripsi muncul saat hover -->
                                 <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
-                                    <p class="text-white text-sm">Ini adalah detail project website 1 yang dibuat menggunakan Tailwind & PHP.</p>
+                                    <p class="text-white text-sm">Pembuatan website intuk menunjukkan Profil Perusahaan</p>
                                 </div>
                             </div>
                         </div>
@@ -194,14 +195,14 @@
 
                             <!-- Logo 1 -->
                             <div class="scale-110 aspect-square flex items-center justify-center transition-transform duration-300 hover:scale-115">
-                                <img src="../assets/img/barkab.png"
+                                <img src="../assets/img/barkab.webp"
                                     alt="Logo Instansi 1"
                                     class="w-[70%] h-[70%] object-contain drop-shadow-[0_6px_8px_rgba(0,0,0,0.25)] transition-all duration-300 hover:drop-shadow-[0_6px_20px_rgba(0,150,255,0.5)]" />
                             </div>
 
                             <!-- Logo 2 -->
                             <div class="aspect-square flex items-center justify-center transition-transform duration-300 hover:scale-105">
-                                <img src="../assets/img/polinus.png"
+                                <img src="../assets/img/polinus.webp"
                                     alt="Logo Instansi 2"
                                     class="w-[70%] h-[70%] object-contain drop-shadow-[0_6px_8px_rgba(0,0,0,0.25)] transition-all duration-300 hover:drop-shadow-[0_6px_20px_rgba(255,200,0,0.5)]" />
                             </div>
@@ -224,7 +225,7 @@
 
                             <!-- Item: Merdeka Siber -->
                             <div class="flex items-center gap-4 bg-white px-5 py-4 rounded-xl shadow-md shadow-red-100/50 hover:shadow-red-400/40 hover:shadow-lg transition duration-300">
-                                <img src="../assets/img/icons/merdeka.png" alt="Merdeka Siber"
+                                <img src="../assets/img/icons/merdeka.webp" alt="Merdeka Siber"
                                     class="w-14 h-14 p-1 rounded-lg bg-white border border-red-200 shadow-sm" />
                                 <div>
                                     <h3 class="font-semibold text-gray-800 text-base">Merdeka Siber</h3>
@@ -234,7 +235,7 @@
 
                             <!-- Item: Gamelab -->
                             <div class="flex items-center gap-4 bg-white px-5 py-4 rounded-xl shadow-md shadow-sky-100/50 hover:shadow-sky-400/40 hover:shadow-lg transition duration-300">
-                                <img src="../assets/img/icons/gamelab.png" alt="Gamelab"
+                                <img src="../assets/img/icons/gamelab.webp" alt="Gamelab"
                                     class="w-14 h-14 p-1 rounded-lg bg-white border border-sky-200 shadow-sm" />
                                 <div>
                                     <h3 class="font-semibold text-gray-800 text-base">Gamelab</h3>
@@ -269,7 +270,7 @@
             <div class="pswp-gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <!-- Sertifikat 1 -->
                 <div class=" mb-4">
-                    <a href="../assets/img/gamelab_certificate.webp" data-pswp-width="3508" data-pswp-height="2480" target="_blank">
+                    <a href="../assets/img/gamelab_certificate.webp" data-pswp-width="3055" data-pswp-height="2160" target="_blank">
                         <img src="../assets/img/gamelab_certificate.webp" alt="Sertifikat Gamelab"
                             class="rounded-lg shadow-md hover:shadow-sky-400/40 hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-zoom-in" />
                     </a>
@@ -278,7 +279,7 @@
 
                 <!-- Sertifikat 2 -->
                 <div class=" mb-4">
-                    <a href="../assets/img/olimpicad_certificate.webp" data-pswp-width="2797" data-pswp-height="1998" target="_blank">
+                    <a href="../assets/img/olimpicad_certificate.webp" data-pswp-width="3096" data-pswp-height="2160" target="_blank">
                         <img src="../assets/img/olimpicad_certificate.webp" alt="Sertifikat OlimpicAD"
                             class="rounded-lg shadow-md hover:shadow-yellow-400/40 hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-zoom-in" />
                     </a>
@@ -287,7 +288,7 @@
 
                 <!-- Sertifikat 3 -->
                 <div class=" mb-4">
-                    <a href="../assets/img/merdeka_siber_certificate.webp" data-pswp-width="5763" data-pswp-height="3842" target="_blank">
+                    <a href="../assets/img/merdeka_siber_certificate.webp" data-pswp-width="3240" data-pswp-height="2160" target="_blank">
                         <img src="../assets/img/merdeka_siber_certificate.webp" alt="Sertifikat Merdeka Siber"
                             class="rounded-lg shadow-md hover:shadow-red-400/40 hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-zoom-in" />
                     </a>
@@ -301,7 +302,7 @@
 
 
 
-    <section class="py-16 px-4 relative bg-[url('../../assets/img/bg-kontak.png')] bg-cover bg-center bg-no-repeat">
+    <section class="py-16 px-4 relative bg-[url('../../assets/img/bg-kontak.webp')] bg-cover bg-center bg-no-repeat">
         <div class="max-w-5xl mx-auto backdrop-blur-md bg-black/30 border border-white/20 rounded-2xl p-8 shadow-lg">
             <h2 class="text-3xl font-bold mb-8 text-center text-white drop-shadow-md">Hubungi Saya</h2>
 
