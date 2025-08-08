@@ -11,9 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="image" href="../assets/img/Rem.webp">
+    <link rel="preload" as="image" href="../assets/img/bg.webp" fetchpriority="high">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css" media="print" onload="this.media='all'">
-    <link rel="preload" as="image" href="../assets/img/bg.webp">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         body {

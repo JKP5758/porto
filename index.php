@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Selamat Datang</title>
+  <meta name="description" content="Disini tidak ada apa-apa, hanya portofolio" />
   <link href="./assets/css/style.css" rel="stylesheet">
   <link rel="icon" type="image/png/ico" href="./assets//img//icons/favico.ico">
 </head>
@@ -13,7 +14,7 @@
     <p class="mb-2">Lagi cari apa?</p>
     <p>
       Di sini enggak ada apa-apa kok
-      <a href="./portofolio/" class="no-underline">😅</a>
+      <a href="./portofolio/" class="no-underline" aria-label="Lihat Portofolio">😅</a>
     </p>
   </div>
 </body>
