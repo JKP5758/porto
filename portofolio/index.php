@@ -45,7 +45,7 @@
 
 
                     <!-- Hero content -->
-                    <div class="relative z-10 grid grid-cols-1 place-items-center md:grid-cols-2 gap-8 px-6 py-8 backdrop-blur-xs  bg-black/25">
+                    <div class="relative z-10 grid grid-cols-1 place-items-center md:grid-cols-2 gap-8 px-6 py-8 backdrop-blur-sm  bg-black/25">
                         <!-- Bagian A -->
                         <div class="flex flex-col justify-center space-y-6  p-4 h-full ">
 
