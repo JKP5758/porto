@@ -97,12 +97,12 @@
                         </div>
 
                         <!-- Bagian B: Ilustrasi -->
-                        <div class="max-h-72 aspect-[1/1] w-auto" data-aos="fade-up"
+                        <div class="aspect-square max-h-72 w-full" data-aos="fade-up"
                             data-aos-duration="1200"
                             data-aos-delay="500">
                             <img src="../assets/img/Rem.webp"
                                 alt="Ilustrasi Karakter"
-                                class="h-full w-auto object-contain drop-shadow-lg transition-transform duration-300 ease-out hover:scale-105 active:scale-110 max-sm:scale-105 animate-pop-in"
+                                class="h-full w-full object-contain drop-shadow-lg transition-transform duration-300 ease-out hover:scale-105 active:scale-110 max-sm:scale-105 animate-pop-in"
                                 loading="eager"
                                 fetchpriority="high">
                         </div>
