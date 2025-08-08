@@ -24,22 +24,22 @@
     <nav aria-label="Header Navigation" class="peer-checked:block hidden pl-2 py-6 sm:block sm:py-0">
       <ul class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8 font-bold">
         <li>
-          <a href="#" class="relative inline-block text-gray-800 hover:text-sky-600 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:translate-x-[-50%] after:w-[80%] after:h-[2px] after:bg-sky-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-center">
+          <a href="../portofolio/#" class="relative inline-block text-gray-800 hover:text-sky-600 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:translate-x-[-50%] after:w-[80%] after:h-[2px] after:bg-sky-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-center">
             Utama
           </a>
         </li>
         <li>
-          <a href="#" class="relative inline-block text-gray-800 hover:text-sky-600 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:translate-x-[-50%] after:w-[80%] after:h-[2px] after:bg-sky-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-center">
+          <a href="../portofolio/#skills" class="relative inline-block text-gray-800 hover:text-sky-600 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:translate-x-[-50%] after:w-[80%] after:h-[2px] after:bg-sky-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-center">
             Kemampuan
           </a>
         </li>
         <li>
-          <a href="#" class="relative inline-block text-gray-800 hover:text-sky-600 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:translate-x-[-50%] after:w-[80%] after:h-[2px] after:bg-sky-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-center">
+          <a href="../portofolio/#sertifikat" class="relative inline-block text-gray-800 hover:text-sky-600 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:translate-x-[-50%] after:w-[80%] after:h-[2px] after:bg-sky-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-center">
           Sertifikat
           </a>
         </li>
         <li>
-          <a href="#" class="relative inline-block text-gray-800 hover:text-sky-600 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:translate-x-[-50%] after:w-[80%] after:h-[2px] after:bg-sky-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-center">
+          <a href="../portofolio/#kontak-section" class="relative inline-block text-gray-800 hover:text-sky-600 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:translate-x-[-50%] after:w-[80%] after:h-[2px] after:bg-sky-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-center">
             Kontak
           </a>
         </li>

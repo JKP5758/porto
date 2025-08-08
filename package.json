@@ -1,12 +1,12 @@
 {
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
+    "aos": "^2.3.4",
     "tailwindcss": "^4.1.11"
   },
   "name": "porto",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tailwind-start": "npx @tailwindcss/cli -i ./assets/css/global.css -o ./assets/css/style.css --watch",
