@@ -10,7 +10,7 @@
 <body class="bg-gray-100 text-gray-800 flex items-center justify-center h-screen font-sans">
   <div class="text-center">
     <h1 class="text-3xl font-bold mb-4">Halo! Gua JKP</h1>
-    <p class="mb-2">Lu lagi ngapain?</p>
+    <p class="mb-2">Lagi cari apa?</p>
     <p>
       Di sini enggak ada apa-apa kok
       <a href="./portofolio/" class="no-underline">😅</a>

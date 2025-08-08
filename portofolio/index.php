@@ -33,13 +33,10 @@
             aria-hidden="true" />
 
         <!-- Section -->
-        <section class="relative z-10  bg-white/70 py-16  px-4">
-            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[auto_1fr_auto] items-center gap-4">
+        <section class="relative z-10  bg-white/70 pb-12 pt-8  px-4 md:px-6">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 items-center gap-4">
 
                 <!-- Tombol kiri -->
-                <button class="hidden md:block bg-white rounded-full p-2 shadow hover:bg-gray-100">
-                    ◀
-                </button>
 
                 <div class="relative overflow-hidden rounded-2xl">
 
@@ -48,18 +45,18 @@
 
 
                     <!-- Hero content -->
-                    <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 px-6 py-8 backdrop-blur-sm  bg-black/25">
+                    <div class="relative z-10 grid grid-cols-1 place-items-center md:grid-cols-2 gap-8 px-6 py-8 backdrop-blur-xs  bg-black/25">
                         <!-- Bagian A -->
                         <div class="flex flex-col justify-center space-y-6  p-4 h-full ">
 
                             <!-- A1: Judul Besar -->
                             <div class="">
-                                <h1 class="text-4xl font-bold text-white"><span class="text-2xl text-sky-400" style="text-shadow: 1px 1px 2px rgba(0,0, 0, 0.5);">よぉ、みな！</span><br>Namaku JKP</h1>
+                                <h1 class="text-4xl font-bold text-white"><span class="text-2xl text-sky-400" style="text-shadow: 1px 1px 2px rgba(0,0, 0, 0.5);">よぉ、みな！</span><br>Nicname JKP</h1>
                             </div>
 
                             <!-- A2: Deskripsi Singkat -->
                             <div class="">
-                                <p class="text-white">Aku adalah seorang programmer pemula yang masih belajar dalam web desain dan cyber security.</p>
+                                <p class="text-white">Gua adalah seorang programmer pemula yang masih belajar tentang web desain dan cyber security.</p>
                             </div>
 
                             <!-- A3: Tombol Read More (rata kanan) -->
@@ -74,15 +71,16 @@
 
                         <!-- Bagian B: Ilustrasi -->
                         <div class="max-h-72 aspect-[1/1] w-auto">
-                            <img src="../assets/img/Rem.webp" alt="Ilustrasi Karakter" class="h-full w-auto object-contain drop-shadow-lg transition-transform duration-300 hover:scale-105 animate-pop-in" loading="eager">
+                            <img src="../assets/img/Rem.webp"
+                                alt="Ilustrasi Karakter"
+                                class="h-full w-auto object-contain drop-shadow-lg transition-transform duration-300 ease-out hover:scale-105 active:scale-110 max-sm:scale-105 animate-pop-in"
+                                loading="eager"
+                                fetchpriority="high">
                         </div>
 
                     </div>
                 </div>
 
-                <button class="hidden md:block bg-white rounded-full p-2 shadow hover:bg-gray-100">
-                    ▶
-                </button>
 
             </div>
         </section>
@@ -162,29 +160,29 @@
                         <h2 class="text-3xl font-bold text-gray-800 tracking-wide pb-2">Keahlian</h2>
 
                         <!-- List Skills -->
-                        <div class="space-y-3">
+                        <div class="space-y-3 max-sm:p-2">
 
                             <!-- Skill Item -->
                             <!-- PHP (warna ungu) -->
-                            <div class="flex items-center gap-4 px-4 py-3 bg-gray-50 hover:bg-purple-100 transition duration-300 rounded-xl shadow-md hover:shadow-purple-400/80 shadow-purple-200/60">
+                            <div class="flex items-center gap-4 px-4 py-3 bg-gray-50 hover:bg-purple-100 transition duration-300 ease-out hover:scale-105 active:scale-110 max-sm:scale-105 animate-pop-in rounded-xl shadow-md hover:shadow-purple-400/80 shadow-purple-200/60">
                                 <img src="../assets/img/icons/icons8-php-96.png" alt="PHP" class="w-8 h-8 object-contain" />
                                 <span class="text-gray-800 font-semibold text-sm">PHP</span>
                             </div>
 
                             <!-- CSS3 (warna biru) -->
-                            <div class="flex items-center gap-4 px-4 py-3 bg-gray-50 hover:bg-blue-100 transition duration-300 rounded-xl shadow-md hover:shadow-blue-400/80 shadow-blue-200/60">
+                            <div class="flex items-center gap-4 px-4 py-3 bg-gray-50 hover:bg-blue-100 transition duration-300 ease-out hover:scale-105 active:scale-110 max-sm:scale-105 animate-pop-in rounded-xl shadow-md hover:shadow-blue-400/80 shadow-blue-200/60">
                                 <img src="../assets/img/icons/icons8-css-96.png" alt="CSS3" class="w-8 h-8 object-contain" />
                                 <span class="text-gray-800 font-semibold text-sm">CSS3</span>
                             </div>
 
                             <!-- MySQL (warna kuning/orange) -->
-                            <div class="flex items-center gap-4 px-4 py-3 bg-gray-50 hover:bg-yellow-100 transition duration-300 rounded-xl shadow-md hover:shadow-yellow-400/80 shadow-yellow-200/60">
+                            <div class="flex items-center gap-4 px-4 py-3 bg-gray-50 hover:bg-yellow-100 transition duration-300 ease-out hover:scale-105 active:scale-110 max-sm:scale-105 animate-pop-in rounded-xl shadow-md hover:shadow-yellow-400/80 shadow-yellow-200/60">
                                 <img src="../assets/img/icons/icons8-mysql-96.png" alt="MySQL" class="w-8 h-8 object-contain" />
                                 <span class="text-gray-800 font-semibold text-sm">MySQL</span>
                             </div>
 
                             <!-- Linux (warna hitam/abu gelap → efek terang saat hover) -->
-                            <div class="flex items-center gap-4 px-4 py-3 bg-gray-50 hover:bg-gray-200 transition duration-300 rounded-xl shadow-md hover:shadow-gray-500/80 shadow-gray-300/60">
+                            <div class="flex items-center gap-4 px-4 py-3 bg-gray-50 hover:bg-gray-200 transition duration-300 ease-out hover:scale-105 active:scale-110 max-sm:scale-105 animate-pop-in rounded-xl shadow-md hover:shadow-gray-500/80 shadow-gray-300/60">
                                 <img src="../assets/img/icons/icons8-linux-96.png" alt="Linux" class="w-8 h-8 object-contain" />
                                 <span class="text-gray-800 font-semibold text-sm">Linux</span>
                             </div>
@@ -208,6 +206,7 @@
                             <div class="scale-110 aspect-square flex items-center justify-center transition-transform duration-300 hover:scale-115">
                                 <img src="../assets/img/barkab.webp"
                                     alt="Logo Instansi 1"
+                                    loading="lazy"
                                     class="w-[70%] h-[70%] object-contain drop-shadow-[0_6px_8px_rgba(0,0,0,0.25)] transition-all duration-300 hover:drop-shadow-[0_6px_20px_rgba(0,150,255,0.5)]" />
                             </div>
 
@@ -215,6 +214,7 @@
                             <div class="aspect-square flex items-center justify-center transition-transform duration-300 hover:scale-105">
                                 <img src="../assets/img/polinus.webp"
                                     alt="Logo Instansi 2"
+                                    loading="lazy"
                                     class="w-[70%] h-[70%] object-contain drop-shadow-[0_6px_8px_rgba(0,0,0,0.25)] transition-all duration-300 hover:drop-shadow-[0_6px_20px_rgba(255,200,0,0.5)]" />
                             </div>
 
@@ -224,7 +224,7 @@
 
 
                     <!-- Pengalaman & Kegiatan -->
-                    <div class="lg:col-span-2 space-y-6 p-4 rounded-2xl bg-white">
+                    <div class="lg:col-span-2 space-y-6 p-4 max-sm:p-6 rounded-2xl bg-white">
 
                         <!-- Title (khusus mobile) -->
                         <h2 class=" lg:hidden text-2xl sm:text-3xl font-bold text-gray-800 tracking-tight">
@@ -235,8 +235,8 @@
                         <div class="space-y-4">
 
                             <!-- Item: Merdeka Siber -->
-                            <div class="flex items-center gap-4 bg-white px-5 py-4 rounded-xl shadow-md shadow-red-100/50 hover:shadow-red-400/40 hover:shadow-lg transition duration-300">
-                                <img src="../assets/img/icons/merdeka.webp" alt="Merdeka Siber"
+                            <div class="flex items-center gap-4 bg-white px-5 py-4 rounded-xl shadow-md shadow-red-100/50 hover:shadow-red-400/40 hover:shadow-lg transition duration-300 ease-out hover:scale-105 active:scale-110 max-sm:scale-105 animate-pop-in">
+                                <img src="../assets/img/icons/merdeka.webp" alt="Merdeka Siber" loading="lazy"
                                     class="w-14 h-14 p-1 rounded-lg bg-white border border-red-200 shadow-sm" />
                                 <div>
                                     <h3 class="font-semibold text-gray-800 text-base">Merdeka Siber</h3>
@@ -245,8 +245,8 @@
                             </div>
 
                             <!-- Item: Gamelab -->
-                            <div class="flex items-center gap-4 bg-white px-5 py-4 rounded-xl shadow-md shadow-sky-100/50 hover:shadow-sky-400/40 hover:shadow-lg transition duration-300">
-                                <img src="../assets/img/icons/gamelab.webp" alt="Gamelab"
+                            <div class="flex items-center gap-4 bg-white px-5 py-4 rounded-xl shadow-md shadow-sky-100/50 hover:shadow-sky-400/40 hover:shadow-lg transition duration-300 ease-out hover:scale-105 active:scale-110 max-sm:scale-105 animate-pop-in">
+                                <img src="../assets/img/icons/gamelab.webp" alt="Gamelab" loading="lazy"
                                     class="w-14 h-14 p-1 rounded-lg bg-white border border-sky-200 shadow-sm" />
                                 <div>
                                     <h3 class="font-semibold text-gray-800 text-base">Gamelab</h3>
@@ -255,8 +255,8 @@
                             </div>
 
                             <!-- Item: Olympicad -->
-                            <div class="flex items-center gap-4 bg-white px-5 py-4 rounded-xl shadow-md shadow-yellow-100/50 hover:shadow-yellow-400/40 hover:shadow-lg transition duration-300">
-                                <img src="../assets/img/icons/olympicad.webp" alt="Olympicad"
+                            <div class="flex items-center gap-4 bg-white px-5 py-4 rounded-xl shadow-md shadow-yellow-100/50 hover:shadow-yellow-400/40 hover:shadow-lg transition duration-300 ease-out hover:scale-105 active:scale-110 max-sm:scale-105 animate-pop-in">
+                                <img src="../assets/img/icons/olympicad.webp" alt="Olympicad" loading="lazy"
                                     class="w-14 h-14 p-1 rounded-lg bg-white border border-yellow-200 shadow-sm" />
                                 <div>
                                     <h3 class="font-semibold text-gray-800 text-base">Olympicad</h3>
@@ -282,7 +282,7 @@
                 <!-- Sertifikat 1 -->
                 <div class=" mb-4">
                     <a href="../assets/img/gamelab_certificate.webp" data-pswp-width="3055" data-pswp-height="2160" target="_blank">
-                        <img src="../assets/img/compress/gamelab_certificate.webp" alt="Sertifikat Gamelab"
+                        <img src="../assets/img/compress/gamelab_certificate.webp" alt="Sertifikat Gamelab" loading="lazy"
                             class="rounded-lg shadow-md hover:shadow-sky-400/40 hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-zoom-in" />
                     </a>
                     <p class="text-base italic text-gray-600 mt-4 sm:mt-6 tracking-wide">Sertifikat Gamelab</p>
@@ -291,7 +291,7 @@
                 <!-- Sertifikat 2 -->
                 <div class=" mb-4">
                     <a href="../assets/img/olimpicad_certificate.webp" data-pswp-width="3096" data-pswp-height="2160" target="_blank">
-                        <img src="../assets/img/compress/olimpicad_certificate.webp" alt="Sertifikat OlimpicAD"
+                        <img src="../assets/img/compress/olimpicad_certificate.webp" alt="Sertifikat OlimpicAD" loading="lazy"
                             class="rounded-lg shadow-md hover:shadow-yellow-400/40 hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-zoom-in" />
                     </a>
                     <p class="text-base italic text-gray-600 mt-4 sm:mt-6 tracking-wide">Sertifikat OlimpicAD</p>
@@ -300,7 +300,7 @@
                 <!-- Sertifikat 3 -->
                 <div class=" mb-4">
                     <a href="../assets/img/merdeka_siber_certificate.webp" data-pswp-width="3240" data-pswp-height="2160" target="_blank">
-                        <img src="../assets/img/compress/merdeka_siber_certificate.webp" alt="Sertifikat Merdeka Siber"
+                        <img src="../assets/img/compress/merdeka_siber_certificate.webp" alt="Sertifikat Merdeka Siber" loading="lazy"
                             class="rounded-lg shadow-md hover:shadow-red-400/40 hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-zoom-in" />
                     </a>
                     <p class="text-base italic text-gray-600 mt-4 sm:mt-6 tracking-wide">Sertifikat Merdeka Siber</p>
@@ -314,7 +314,7 @@
 
 
     <section id="kontak-section" class="py-16 px-4 relative bg-cover bg-center bg-no-repeat">
-        <div class="max-w-5xl mx-auto backdrop-blur-sm bg-black/40 border border-white/20 rounded-2xl p-8 shadow-lg">
+        <div class="max-w-5xl mx-auto backdrop-blur-xs bg-black/50 border border-white/20 rounded-2xl p-8 shadow-lg">
             <h2 class="text-3xl font-bold mb-8 text-center text-white drop-shadow-md">Hubungi Saya</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -375,7 +375,7 @@
                         <label class="block font-semibold mb-1 text-white drop-shadow-sm" for="message">Pesan</label>
                         <textarea id="message" name="message" rows="4" class="w-full p-2 rounded bg-white/80 text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50" required></textarea>
                     </div>
-                    <button type="submit" class="w-full bg-gradient-to-r from-stone-300/20 to-blue-400/20 hover:from-stone-300/30 hover:to-blue-400/30 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300">
+                    <button type="submit" class="w-full bg-gradient-to-r from-stone-300/20 to-gray-800/20 hover:from-stone-300/30 hover:to-gray-800/30 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300">
                         Kirim Pesan
                     </button>
 
@@ -432,11 +432,25 @@
             observer.observe(kontakSection);
         });
 
+        // 🔹 Preload gambar dengan priority rendah
+        function preloadImages(images) {
+            images.forEach(src => {
+                const img = new Image();
+                img.loading = 'lazy'; // Low priority
+                img.decoding = 'async'; // Parsing async
+                img.src = src;
+            });
+        }
+
+        // 🔹 Setup rotasi gambar
         function setupImageRotation(imageIds, imageList, intervalMs) {
             let current = 0;
             const imgA = document.getElementById(imageIds[0]);
             const imgB = document.getElementById(imageIds[1]);
             let showingA = true;
+
+            // Pasang gambar pertama
+            imgA.src = imageList[current];
 
             setInterval(() => {
                 current = (current + 1) % imageList.length;
@@ -455,29 +469,27 @@
             }, intervalMs);
         }
 
-        // Setup untuk Card A
-        setupImageRotation(
-            ['cardA-img1', 'cardA-img2'],
-            [
-                '../assets/img/sample_web/WebA2.webp',
-                '../assets/img/sample_web/WebA3.webp',
-                '../assets/img/sample_web/WebA4.webp',
-                '../assets/img/sample_web/WebA1.webp'
-            ],
-            5000
-        );
+        // 🔹 Daftar gambar Card A & Card B
+        const cardAImages = [
+            '../assets/img/sample_web/WebA2.webp',
+            '../assets/img/sample_web/WebA3.webp',
+            '../assets/img/sample_web/WebA4.webp',
+            '../assets/img/sample_web/WebA1.webp'
+        ];
 
-        // Setup untuk Card B
-        setupImageRotation(
-            ['cardB-img1', 'cardB-img2'],
-            [
-                '../assets/img/sample_web/WebB2.webp',
-                '../assets/img/sample_web/WebB3.webp',
-                '../assets/img/sample_web/WebB4.webp',
-                '../assets/img/sample_web/WebB1.webp'
-            ],
-            5000
-        );
+        const cardBImages = [
+            '../assets/img/sample_web/WebB2.webp',
+            '../assets/img/sample_web/WebB3.webp',
+            '../assets/img/sample_web/WebB4.webp',
+            '../assets/img/sample_web/WebB1.webp'
+        ];
+
+        // 🔹 Preload dulu biar nggak request berulang
+        preloadImages([...cardAImages, ...cardBImages]);
+
+        // 🔹 Jalankan rotasi
+        setupImageRotation(['cardA-img1', 'cardA-img2'], cardAImages, 5000);
+        setupImageRotation(['cardB-img1', 'cardB-img2'], cardBImages, 5000);
     </script>
 
 </body>

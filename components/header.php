@@ -1,4 +1,4 @@
-<header class="sticky top-0 z-50 px-4 backdrop-blur-md bg-white/50 border-b border-white/10 animate-fade-in-down transition-all duration-300 shadow-md">
+<header class="sticky top-0 z-50 px-4 backdrop-blur-sm bg-white/50 border-b border-white/10 animate-fade-in-down transition-all duration-300 shadow-md transform-gpu">
   <div class="relative z-10 mx-auto flex max-w-screen-lg flex-col py-4 sm:flex-row sm:items-center sm:justify-between">
 
     <!-- Logo -->
