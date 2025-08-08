@@ -48,17 +48,4 @@
         transform: scaleX(1);
         }
     }
-
-    --animate-pop-in: pop-in 0.4s ease-out;
-
-    @keyframes pop-in {
-        0% {
-        transform: translateY(30px);
-        opacity: 0;
-        }
-        100% {
-        transform: translateY(0);
-        opacity: 1;
-        }
-    }
 }
