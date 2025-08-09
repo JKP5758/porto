@@ -18,6 +18,7 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            background-color: white;
         }
     </style>
 </head>
@@ -46,7 +47,7 @@
             <img
                 src="../assets/img/Rem.webp"
                 alt=""
-                class="absolute inset-0 w-full h-full object-cover object-center opacity-25 z-0 pointer-events-none"
+                class="absolute p-1 inset-0 w-full h-full object-cover object-center opacity-25 z-0 pointer-events-none"
                 aria-hidden="true"
                 loading="eager"
                 fetchpriority="high" />
@@ -90,7 +91,7 @@
                             <div class="text-right font-bold" data-aos="fade-up"
                                 data-aos-duration="1000"
                                 data-aos-delay="500">
-                                <a href="#" class="group relative inline-block text-white transition-colors duration-200 hover:text-white">
+                                <a href="#about" class="group relative inline-block text-white transition-colors duration-200 hover:text-white">
                                     Selengkapnya...
                                     <span class="absolute left-0 -bottom-1 h-[4px] w-full rounded-full bg-whitetransition-colors duration-200 group-hover:bg-white"></span>
                                 </a>
@@ -99,12 +100,18 @@
                         </div>
 
                         <!-- Bagian B: Ilustrasi -->
-                        <div class="aspect-square max-h-72 w-full" data-aos="fade-up"
+                        <div class="aspect-square max-h-72 w-full relative flex items-center justify-center" data-aos="fade-up"
                             data-aos-duration="1200"
                             data-aos-delay="500">
+                            <!-- SVG Background (lebih besar, skala 1.5x, animasi rotate) -->
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
+                                class="absolute inset-0 w-full h-full z-0 pointer-events-none opacity-60 scale-[1.5] animate-spin-slow">
+                                <path fill="#38bdf8" d="M48.8,-50.5C63.1,-46.1,74.6,-30.6,75,-15.2C75.3,0.3,64.6,15.7,55.8,33.4C47,51.2,40.1,71.3,27.7,75.6C15.3,79.9,-2.7,68.4,-17.6,58.6C-32.6,48.8,-44.4,40.6,-49.3,29.7C-54.1,18.7,-52,5,-48.5,-7.4C-45,-19.8,-40.1,-30.9,-31.8,-36.4C-23.5,-41.9,-11.7,-41.8,2.7,-45.1C17.2,-48.3,34.4,-54.9,48.8,-50.5Z" transform="translate(100 100)" />
+                            </svg>
+                            <!-- Image di atas SVG -->
                             <img src="../assets/img/Rem.webp"
                                 alt="Ilustrasi Karakter"
-                                class="h-full w-full object-contain drop-shadow-lg transition-transform duration-300 ease-out hover:scale-105 active:scale-110 max-sm:scale-105 animate-pop-in"
+                                class="relative h-full w-full object-contain drop-shadow-lg transition-transform duration-300 ease-out hover:scale-105 active:scale-110 max-sm:scale-105 animate-pop-in z-10"
                                 loading="eager"
                                 fetchpriority="high">
                         </div>
@@ -381,11 +388,64 @@
         </section>
     </div>
 
+    <section id="about" class=" scroll-mt-12 pt-1">
+        <div class="relative  flex justify-center items-center py-16 px-4 md:p-12 gap-8 md:gap-16 bg-[url('../../assets/img/layer-bottom.svg')] bg-cover bg-bottom ">
+
+            <div class=" max-w-5xl flex justify-center gap-8 max-sm:p-6 max-md:flex-col  backdrop-blur-xs border border-white/20 rounded-2xl p-8 shadow-lg">
+                <!-- Bagian A: Ilustrasi -->
+                <div class="md:w-1/2"
+                    data-aos="zoom-in"
+                    data-aos-duration="800"
+                    data-aos-delay="0">
+
+                    <div class=" flex min-h-48 h-full justify-center items-center border-2 border-stone-300/50 rounded-xl bg-white/60 shadow-lg p-6 group relative overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
+                        <img src="../assets/img/jkp.jpg"
+                            alt="Ilustrasi About Me"
+                            loading="lazy"
+                            class="w-full h-full  rounded-lg shadow-lg ring-2 ring-sky-200 absolute inset-0  object-cover transition-opacity duration-1000 opacity-100 group-hover:blur-sm group-hover:brightness-90" />
+                        <!-- Overlay gelap bawah -->
+                        <div class="absolute bottom-0 left-0 w-full h-[60%] bg-gradient-to-t from-black to-transparent px-4 flex items-end pb-2 pointer-events-none">
+                            <!-- Judul/teks opsional, bisa diisi jika ingin -->
+                            <h3 class="text-white text-xl font-semibold mb-4 ml-2 transition-opacity duration-300 group-hover:opacity-0">
+                                Joko Purnomo
+                            </h3>
+                        </div>
+                        <!-- Deskripsi muncul saat hover (opsional, bisa diisi jika ingin) -->
+
+                        <div class="z-10 absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+                            <p class="text-white text-lg">Ini adalah foto Gua. foto ini diambil apa adanya, karena gua jarang difoto jadi foto gua sangat terbatas.</p>
+                        </div>
+                    </div>
+                </div>
 
 
-    <section id="sertifikat" class="scroll-mt-16 py-20 px-4 bg-gradient-to-b from-white via-sky-50 to-white">
-        <div class="max-w-screen-lg mx-auto text-center">
-            <h2 class="text-3xl font-bold text-sky-700 mb-2"
+                <!-- Bagian B: About Me dan kalimat -->
+                <div class="md:w-1/2"
+                    data-aos="zoom-in"
+                    data-aos-duration="800"
+                    data-aos-delay="200">
+
+                    <div class=" border-2 border-white/25 rounded-xl bg-white/25 shadow-lg shadow-amber-50/30 p-6">
+                        <h2 class="text-3xl font-bold mb-4 text-gray-800 drop-shadow-sm">About Me</h2>
+                        <p class="mb-4 text-gray-700 leading-relaxed">
+                            Halo! Nama gua Joko Purnomo, mahasiswa Teknik Rekayasa Perangkat Lunak yang suka banget ngulik coding, game, anime, dan cyber security.
+                        </p>
+                        <p class="mb-4 text-gray-700 leading-relaxed">
+                            Gua suka nyoba hal baru dan pengen banget bisa bahasa Jepang! Yuk, ngobrol bareng gua kalau lu punya passion yang sama atau pengen belajar sesuatu.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Semangat terus, jangan lupa tidur, dan keep coding! 🚀
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="sertifikat" class="relative scroll-mt-16 py-20 px-4 bg-[url('../../assets/img/layer-top.svg')] bg-cover bg-center">
+        <div class=" max-w-screen-lg mx-auto text-center">
+            <h2 class="text-3xl font-bold md:text-gray-800 text-stone-100 mb-2"
                 data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
                 data-aos-duration="700"
@@ -393,15 +453,15 @@
                 data-aos-delay="0">
                 Sertifikat Pencapaian 🏆
             </h2>
-            <div class="w-16 h-1 bg-sky-500 mx-auto rounded-full mb-6"></div>
-            <p class="text-gray-600 mb-10 text-sm sm:text-base"
+            <div class="w-16 h-1 md:bg-zinc-800 bg-white mx-auto rounded-full mb-6"></div>
+            <p class="md:text-gray-800 text-stone-100 mb-10 text-sm sm:text-base"
                 data-aos="zoom-in"
                 data-aos-duration="800"
                 data-aos-delay="200">
                 Beberapa penghargaan dan bukti kontribusi dalam dunia teknologi & pengembangan.
             </p>
 
-            <div class="pswp-gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class=" pswp-gallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <!-- Sertifikat 1 -->
                 <div class=" mb-4">
                     <div data-aos="zoom-in"
