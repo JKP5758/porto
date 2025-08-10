@@ -54,7 +54,7 @@
         </div>
 
         <!-- Section -->
-        <section class="relative z-10  bg-white/70 pb-12 pt-8 px-4 md:py-16 md:px-16">
+        <section class="relative z-10  bg-white/65 pb-12 pt-8 px-4 md:py-16 md:px-16">
             <div class="max-w-7xl mx-auto grid grid-cols-1 items-center gap-4">
 
                 <!-- Tombol kiri -->
@@ -144,55 +144,54 @@
                         <!-- 2 Card mendatar (pakai image, ukuran fleksibel) -->
                         <div class="flex flex-wrap gap-4">
                             <!-- Card 1 -->
-                            <div class="relative group flex-1 min-w-[120px] h-48 bg-white rounded-xl overflow-hidden shadow border border-gray-400 cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
+                            <div class="card-hover relative group flex-1 min-w-[120px] h-48 bg-white rounded-xl overflow-hidden shadow border border-gray-400 cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
                                 data-aos="zoom-in"
                                 data-aos-duration="800"
                                 data-aos-delay="200">
 
                                 <img id="cardA-img1" src="../assets/img/sample_web/WebA1.webp" alt="Preview Web E-commerce"
-                                    class="absolute inset-0 w-full h-48 object-cover transition-opacity duration-1000 opacity-100 group-hover:blur-sm group-hover:brightness-90" />
+                                    class="absolute inset-0 w-full h-48 object-cover transition-opacity duration-1000 opacity-100 group-hover:blur-sm group-hover:brightness-90 group-[.active]:blur-sm group-[.active]:brightness-90" />
                                 <img id="cardA-img2" src="" alt=""
-                                    class="absolute inset-0 w-full h-48 object-cover transition-opacity duration-1000 opacity-0 group-hover:blur-sm group-hover:brightness-90" />
+                                    class="absolute inset-0 w-full h-48 object-cover transition-opacity duration-1000 opacity-0 group-hover:blur-sm group-hover:brightness-90 group-[.active]:blur-sm group-[.active]:brightness-90" />
 
-                                <!-- Overlay gelap bawah (bisa diatur tingginya) -->
+                                <!-- Overlay gelap bawah -->
                                 <div class="absolute bottom-0 left-0 w-full h-[60%] bg-gradient-to-t from-black to-transparent px-4 flex items-end pb-2">
-                                    <h3 class="text-white text-sm font-semibold mb-1 transition-opacity duration-300 group-hover:opacity-0">
+                                    <h3 class="text-white text-sm font-semibold mb-1 transition-opacity duration-300 group-hover:opacity-0 group-[.active]:opacity-0">
                                         E-commerce
                                     </h3>
                                 </div>
 
-                                <!-- Deskripsi muncul saat hover -->
-                                <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+                                <!-- Deskripsi -->
+                                <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 group-[.active]:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
                                     <p class="text-white text-sm">Pembuatan website sistem jual beli buku untuk Toko buku</p>
                                 </div>
                             </div>
 
-
-
                             <!-- Card 2 -->
-                            <div class="relative group flex-1 min-w-[120px] h-48 bg-white rounded-xl overflow-hidden shadow border border-gray-400 cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
+                            <div class="card-hover relative group flex-1 min-w-[120px] h-48 bg-white rounded-xl overflow-hidden shadow border border-gray-400 cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
                                 data-aos="zoom-in"
                                 data-aos-duration="800"
                                 data-aos-delay="300">
 
                                 <img id="cardB-img1" src="../assets/img/sample_web/WebB1.webp" alt="Preview Web Company Profile"
-                                    class="absolute inset-0 w-full h-48 object-cover transition-opacity duration-1000 opacity-100 group-hover:blur-sm group-hover:brightness-90" />
+                                    class="absolute inset-0 w-full h-48 object-cover transition-opacity duration-1000 opacity-100 group-hover:blur-sm group-hover:brightness-90 group-[.active]:blur-sm group-[.active]:brightness-90" />
                                 <img id="cardB-img2" src="" alt=""
-                                    class="absolute inset-0 w-full h-48 object-cover transition-opacity duration-1000 opacity-0 group-hover:blur-sm group-hover:brightness-90" />
+                                    class="absolute inset-0 w-full h-48 object-cover transition-opacity duration-1000 opacity-0 group-hover:blur-sm group-hover:brightness-90 group-[.active]:blur-sm group-[.active]:brightness-90" />
 
-                                <!-- Overlay gelap bawah (bisa diatur tingginya) -->
+                                <!-- Overlay gelap bawah -->
                                 <div class="absolute bottom-0 left-0 w-full h-[60%] bg-gradient-to-t from-black to-transparent px-4 flex items-end pb-2">
-                                    <h3 class="text-white text-sm font-semibold mb-1 transition-opacity duration-300 group-hover:opacity-0">
+                                    <h3 class="text-white text-sm font-semibold mb-1 transition-opacity duration-300 group-hover:opacity-0 group-[.active]:opacity-0">
                                         Company Profile
                                     </h3>
                                 </div>
 
-                                <!-- Deskripsi muncul saat hover -->
-                                <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
-                                    <p class="text-white text-sm">Pembuatan website intuk menunjukkan Profil Perusahaan</p>
+                                <!-- Deskripsi -->
+                                <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 group-[.active]:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+                                    <p class="text-white text-sm">Pembuatan website untuk menunjukkan Profil Perusahaan</p>
                                 </div>
                             </div>
                         </div>
+
 
 
 
@@ -393,39 +392,41 @@
 
             <div class=" max-w-5xl w-full  flex justify-center gap-8 max-sm:p-6 max-md:flex-col  backdrop-blur-xs border border-white/20 rounded-2xl p-8 shadow-lg">
                 <!-- Bagian A: Ilustrasi -->
-                <div class="w-xl"
+                <div class="md:w-1/2"
                     data-aos="zoom-in"
                     data-aos-duration="800"
                     data-aos-delay="0">
 
-                    <div class=" flex min-h-48 h-full justify-center items-center border-2 border-stone-300/50 rounded-xl bg-white/60 shadow-lg p-6 group relative overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
-                        <img src="../assets/img/jkp.jpg"
+                    <div class="card-hover group flex min-h-48 h-full justify-center items-center border-2 border-stone-300/50 rounded-xl bg-white/60 shadow-lg p-6 relative overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-[1.02]">
+
+                        <img src="../assets/img/jkp.webp"
                             alt="Ilustrasi About Me"
                             loading="lazy"
-                            class="w-full h-full  rounded-lg shadow-lg ring-2 ring-sky-200 absolute inset-0  object-cover transition-opacity duration-1000 opacity-100 group-hover:blur-sm group-hover:brightness-90" />
+                            class="w-full h-full rounded-lg shadow-lg ring-2 ring-sky-200 absolute inset-0 object-cover transition-all duration-1000 opacity-100 group-hover:blur-sm group-hover:brightness-90 group-[.active]:blur-sm group-[.active]:brightness-90" />
+
                         <!-- Overlay gelap bawah -->
                         <div class="absolute bottom-0 left-0 w-full h-[60%] bg-gradient-to-t from-black to-transparent px-4 flex items-end pb-2 pointer-events-none">
-                            <!-- Judul/teks opsional, bisa diisi jika ingin -->
-                            <h3 class="text-white text-xl font-semibold mb-4 ml-2 transition-opacity duration-300 group-hover:opacity-0">
+                            <h3 class="text-white text-xl font-semibold mb-4 ml-2 transition-opacity duration-300 group-hover:opacity-0 group-[.active]:opacity-0">
                                 Joko Purnomo
                             </h3>
                         </div>
-                        <!-- Deskripsi muncul saat hover (opsional, bisa diisi jika ingin) -->
 
-                        <div class="z-10 absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
-                            <p class="text-white text-lg">Ini adalah foto Gua. foto ini diambil apa adanya, karena gua jarang difoto jadi foto gua sangat terbatas.</p>
+                        <!-- Deskripsi -->
+                        <div class="z-10 absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 group-[.active]:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+                            <p class="text-white text-lg">Ini adalah foto Gua. Foto ini burik karena foto ini diambil apa adanyanya, dan Gua enggak suka difoto :(</p>
                         </div>
                     </div>
                 </div>
 
 
+
                 <!-- Bagian B: About Me dan kalimat -->
-                <div class="w-xl"
+                <div class="md:w-1/2"
                     data-aos="zoom-in"
                     data-aos-duration="800"
                     data-aos-delay="200">
 
-                    <div class=" w-xl border-2 border-white/25 rounded-xl bg-black/25 shadow-lg shadow-amber-50/30 p-6">
+                    <div class="border-2 border-white/25 rounded-xl bg-white/25 shadow-lg shadow-amber-50/30 p-6">
                         <h2 class="text-3xl font-bold mb-4 text-gray-800 drop-shadow-sm">About Me</h2>
                         <p class="mb-4 text-gray-700 leading-relaxed">
                             Halo! Nama gua Joko Purnomo, mahasiswa Teknik Rekayasa Perangkat Lunak yang suka banget ngulik coding, game, anime, dan cyber security.
@@ -512,8 +513,8 @@
 
 
     <section id="kontak-section" class="scroll-mt-16 py-16 px-4 relative bg-cover bg-center bg-no-repeat">
-        <div class="max-w-5xl mx-auto backdrop-blur-xs bg-black/50 border border-white/20 rounded-2xl p-8 shadow-lg">
-            <h2 class="text-3xl font-bold mb-8 text-center text-white drop-shadow-md"
+        <div class="max-w-5xl mx-auto backdrop-blur-sm bg-white/10 border border-stone-300/20 rounded-2xl p-8 shadow-lg">
+            <h2 class="text-3xl font-bold mb-8 text-center text-gray-800 drop-shadow-md"
                 data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
                 data-aos-duration="700"
@@ -527,7 +528,7 @@
                 <!-- Kontak Langsung -->
                 <div class="space-y-6">
                     <!-- Pembuka -->
-                    <p class="text-white text-base leading-relaxed drop-shadow-sm"
+                    <p class="text-gray-800 text-base leading-relaxed drop-shadow-sm"
                         data-aos="zoom-in"
                         data-aos-duration="800"
                         data-aos-delay="200">
@@ -545,8 +546,8 @@
                             <div class="flex items-center gap-3 p-4 rounded-lg bg-stone-300/10 border border-white/20 hover:scale-105 transition duration-300">
                                 <img src="../assets/img/icons/gmail.svg" alt="Email" class="w-6 h-6" />
                                 <div>
-                                    <p class="text-white font-semibold drop-shadow-sm">Email</p>
-                                    <p class="text-white/90 drop-shadow-sm">jokopurnomo22012006@gmail.com</p>
+                                    <p class="text-gray-800 font-semibold drop-shadow-sm">Email</p>
+                                    <p class="text-gray-800/90 drop-shadow-sm">jokopurnomo22012006@gmail.com</p>
                                 </div>
                             </div>
                         </div>
@@ -559,8 +560,8 @@
                             <div class="flex items-center gap-3 p-4 rounded-lg bg-stone-300/10 border border-white/20 hover:scale-105 transition duration-300">
                                 <img src="../assets/img/icons/whatsapp.svg" alt="WhatsApp" class="w-6 h-6" />
                                 <div>
-                                    <p class="text-white font-semibold drop-shadow-sm">WhatsApp</p>
-                                    <p class="text-white/90 drop-shadow-sm">+62 812-3456-7890</p>
+                                    <p class="text-gray-800 font-semibold drop-shadow-sm">WhatsApp</p>
+                                    <p class="text-gray-800/90 drop-shadow-sm">+62 812-3456-7890</p>
                                 </div>
                             </div>
                         </div>
@@ -573,8 +574,8 @@
                             <div class="flex items-center gap-3 p-4 rounded-lg bg-stone-300/10 border border-white/20 hover:scale-105 transition duration-300">
                                 <img src="../assets/img/icons/github.svg" alt="GitHub" class="w-6 h-6" />
                                 <div>
-                                    <p class="text-white font-semibold drop-shadow-sm">GitHub</p>
-                                    <a href="https://github.com/JKP5758" class="text-white/90 hover:underline hover:text-white drop-shadow-sm transition duration-300">
+                                    <p class="text-gray-800 font-semibold drop-shadow-sm">GitHub</p>
+                                    <a href="https://github.com/JKP5758" class="text-gray-800/90 hover:underline hover:text-gray-800 drop-shadow-sm transition duration-300">
                                         github.com/JKP5758
                                     </a>
                                 </div>
@@ -590,18 +591,18 @@
                     data-aos-duration="2000"
                     data-aos-delay="700">
                     <div>
-                        <label class="block font-semibold mb-1 text-white drop-shadow-sm" for="name">Nama</label>
-                        <input type="text" id="name" name="name" class="w-full p-2 rounded bg-white/80 text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50" required>
+                        <label class="block font-semibold mb-1 text-gray-800 drop-shadow-sm" for="name">Nama</label>
+                        <input type="text" id="name" name="name" class="w-full p-2 rounded bg-white/70 text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50" required>
                     </div>
                     <div>
-                        <label class="block font-semibold mb-1 text-white drop-shadow-sm" for="email">Email</label>
-                        <input type="email" id="email" name="email" class="w-full p-2 rounded bg-white/80 text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50" required>
+                        <label class="block font-semibold mb-1 text-gray-800 drop-shadow-sm" for="email">Email</label>
+                        <input type="email" id="email" name="email" class="w-full p-2 rounded bg-white/70 text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50" required>
                     </div>
                     <div>
-                        <label class="block font-semibold mb-1 text-white drop-shadow-sm" for="message">Pesan</label>
-                        <textarea id="message" name="message" rows="4" class="w-full p-2 rounded bg-white/80 text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50" required></textarea>
+                        <label class="block font-semibold mb-1 text-gray-800 drop-shadow-sm" for="message">Pesan</label>
+                        <textarea id="message" name="message" rows="4" class="w-full p-2 rounded bg-white/70 text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50" required></textarea>
                     </div>
-                    <button type="submit" class="w-full bg-gradient-to-r transition transform duration-300 from-stone-300/20 to-gray-800/20 hover:from-stone-300/30 hover:to-gray-800/30 text-white font-semibold py-2 px-4 rounded-lg shadow-md ">
+                    <button type="submit" class="w-full  transition transform duration-300 stone-300/20  hover:from-stone-300/30 text-gray-800 font-semibold py-2 px-4 rounded-lg shadow-md ">
                         Kirim Pesan
                     </button>
 
@@ -716,6 +717,13 @@
         // 🔹 Jalankan rotasi
         setupImageRotation(['cardA-img1', 'cardA-img2'], cardAImages, 5000);
         setupImageRotation(['cardB-img1', 'cardB-img2'], cardBImages, 5000);
+
+
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.addEventListener('click', function() {
+                this.classList.toggle('active');
+            });
+        });
     </script>
 
 </body>
