@@ -420,7 +420,7 @@
 
 
                 <!-- Bagian B: About Me dan kalimat -->
-                <div class="w-1/2"
+                <div class="w-xl"
                     data-aos="zoom-in"
                     data-aos-duration="800"
                     data-aos-delay="200">
