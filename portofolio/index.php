@@ -389,11 +389,11 @@
     </div>
 
     <section id="about" class=" scroll-mt-12 pt-1">
-        <div class="relative w-full flex justify-center items-center py-16 px-4 md:p-12 gap-8 md:gap-16 bg-cover bg-bottom " style="background-image: url('../assets/img/layer-bottom.svg');">
+        <div class="relative w-full flex justify-center items-center py-16 px-4 md:p-12 gap-8 md:gap-16 bg-cover md:bg-bottom bg-bottom " style="background-image: url('../assets/img/layer-bottom.svg');">
 
             <div class=" max-w-5xl w-full relative flex justify-center gap-8 max-sm:p-6 max-md:flex-col  backdrop-blur-xs border border-white/20 rounded-2xl p-8 shadow-lg">
                 <!-- Bagian A: Ilustrasi -->
-                <div class="md:w-1/2"
+                <div class="w-1/2"
                     data-aos="zoom-in"
                     data-aos-duration="800"
                     data-aos-delay="0">
@@ -420,7 +420,7 @@
 
 
                 <!-- Bagian B: About Me dan kalimat -->
-                <div class="md:w-1/2"
+                <div class=""
                     data-aos="zoom-in"
                     data-aos-duration="800"
                     data-aos-delay="200">
