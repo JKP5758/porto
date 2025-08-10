@@ -123,7 +123,7 @@
             </div>
         </section>
 
-        <section id="skills" class="scroll-mt-16 relative z-10   bg-white/70 py-16 px-4 ">
+        <section id="skills" class="scroll-mt-16 relative z-10   bg-white/65 py-16 px-4 ">
             <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 rounded-xl p-6 max-sm:px-0">
 
                 <!-- A (Kiri) -->
