@@ -389,9 +389,9 @@
     </div>
 
     <section id="about" class=" scroll-mt-12 pt-1">
-        <div class="relative  flex justify-center items-center py-16 px-4 md:p-12 gap-8 md:gap-16 bg-[url('../../assets/img/layer-bottom.svg')] bg-cover bg-bottom ">
+        <div class="relative w-full flex justify-center items-center py-16 px-4 md:p-12 gap-8 md:gap-16 bg-cover bg-bottom " style="background-image: url('../assets/img/layer-bottom.svg');">
 
-            <div class=" max-w-5xl flex justify-center gap-8 max-sm:p-6 max-md:flex-col  backdrop-blur-xs border border-white/20 rounded-2xl p-8 shadow-lg">
+            <div class=" max-w-5xl w-full relative flex justify-center gap-8 max-sm:p-6 max-md:flex-col  backdrop-blur-xs border border-white/20 rounded-2xl p-8 shadow-lg">
                 <!-- Bagian A: Ilustrasi -->
                 <div class="md:w-1/2"
                     data-aos="zoom-in"
@@ -443,7 +443,7 @@
     </section>
 
 
-    <section id="sertifikat" class="relative scroll-mt-16 py-20 px-4 bg-[url('../../assets/img/layer-top.svg')] bg-cover md:bg-top bg-center">
+    <section id="sertifikat" class="relative scroll-mt-16 py-20 px-4 bg-cover md:bg-top bg-center" style="background-image: url('../assets/img/layer-top.svg');">
         <div class=" max-w-screen-lg mx-auto text-center">
             <h2 class="text-3xl font-bold md:text-gray-800 text-stone-100 mb-2"
                 data-aos="fade-zoom-in"
