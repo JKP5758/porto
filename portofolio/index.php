@@ -130,7 +130,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4  p-4 lg:pr-0 max-sm:px-0">
 
                     <!-- A1: Web List -->
-                    <div class="flex flex-col justify-start space-y-4 p-4 rounded-2xl bg-white">
+                    <div class="flex flex-col justify-start space-y-4 p-4 rounded-2xl bg-white/80 border-white/20">
                         <!-- Title -->
                         <h2 class="text-3xl font-bold text-gray-800 tracking-wide pb-2"
                             data-aos="fade-zoom-in"
@@ -209,7 +209,7 @@
                     </div>
 
                     <!-- A2: Web List -->
-                    <div class="flex flex-col justify-start space-y-4 p-4 rounded-2xl bg-white">
+                    <div class="flex flex-col justify-start space-y-4 p-4 rounded-2xl bg-white/80 border-white">
 
                         <!-- Title -->
                         <h2 class="text-3xl font-bold text-gray-800 tracking-wide pb-2"
@@ -274,7 +274,7 @@
                 <div class=" grid grid-cols-1 lg:grid-cols-3 gap-4 p-4 lg:pl-0 max-sm:px-0">
 
                     <!-- B1: Logo Instansi -->
-                    <div class="flex justify-center flex-col lg:col-span-1 space-y-4 p-4 rounded-2xl bg-white">
+                    <div class="flex justify-center flex-col lg:col-span-1 space-y-4 p-4 rounded-2xl bg-white/80 border-white">
 
                         <!-- Judul -->
                         <h2 class=" lg:hidden text-3xl font-bold text-gray-800 tracking-wide pb-2"
@@ -321,7 +321,7 @@
 
 
                     <!-- Pengalaman & Kegiatan -->
-                    <div class="lg:col-span-2 space-y-6 p-4 max-sm:p-6 rounded-2xl bg-white">
+                    <div class="lg:col-span-2 space-y-6 p-4 max-sm:p-6 rounded-2xl bg-white/80 border-white">
 
                         <!-- Title (khusus mobile) -->
                         <h2 class=" lg:hidden text-2xl sm:text-3xl font-bold text-gray-800 tracking-tight"
