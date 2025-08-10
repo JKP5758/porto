@@ -425,7 +425,7 @@
                     data-aos-duration="800"
                     data-aos-delay="200">
 
-                    <div class=" border-2 border-white/25 rounded-xl bg-white/25 shadow-lg shadow-amber-50/30 p-6">
+                    <div class=" w-xl border-2 border-white/25 rounded-xl bg-white/25 shadow-lg shadow-amber-50/30 p-6">
                         <h2 class="text-3xl font-bold mb-4 text-gray-800 drop-shadow-sm">About Me</h2>
                         <p class="mb-4 text-gray-700 leading-relaxed">
                             Halo! Nama gua Joko Purnomo, mahasiswa Teknik Rekayasa Perangkat Lunak yang suka banget ngulik coding, game, anime, dan cyber security.
