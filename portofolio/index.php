@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="image" href="../assets/img/Rem.webp">
-    <link rel="preload" as="image" href="../assets/img/bg.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="../assets/img/bg.webp">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css" media="print" onload="this.media='all'">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -62,7 +62,13 @@
                 <div class="relative overflow-hidden rounded-2xl">
 
                     <!-- Background Blur Layer -->
-                    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../assets/img/bg.webp');"></div>
+                    <!-- Gambar LCP -->
+                    <img src="../assets/img/bg.webp"
+                        alt=""
+                        loading="eager"
+                        fetchpriority="high"
+                        class="absolute inset-0 w-full h-full object-cover scale-110 transform transition-transform duration-700 ease-out will-change-transform">
+
 
 
                     <!-- Hero content -->
