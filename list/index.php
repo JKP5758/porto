@@ -46,7 +46,7 @@
 
                 <div class="p-4 flex flex-col justify-between flex-1">
                     <div>
-                        <h2 class="text-lg font-semibold mb-1 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+                        <h2 class="text-lg font-semibold mb-1 text-gray-800 group-hover:text-blue-700 transition-colors duration-300">
                             Toko Buku
                         </h2>
                         <p class="text-sm text-gray-500 min-h-[48px]">
@@ -61,7 +61,7 @@
                             Repository
                         </a>
                         <a href="http://jkp.free.nf" target="_blank" aria-label="Kunjungi Toko Buku"
-                            class="flex-1 bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-md transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 text-center">
+                            class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-md transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 text-center">
                             Kunjungi
                         </a>
                     </div>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="p-4 flex flex-col justify-between flex-1">
                     <div>
-                        <h2 class="text-lg font-semibold mb-1 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">Tani Berkah</h2>
+                        <h2 class="text-lg font-semibold mb-1 text-gray-800 group-hover:text-blue-700 transition-colors duration-300">Tani Berkah</h2>
                         <p class="text-sm text-gray-500 min-h-[48px]">
                             Project ini dibuat untuk lomba mahasiswa baru Teknik Rekayasa perangkat Lunak.
                         </p>
@@ -93,7 +93,7 @@
                             Repository
                         </a>
                         <a href="https://mydev-pertanian.vercel.app/" target="_blank" aria-label="Kunjungi Tani Berkah"
-                            class="flex-1 bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-md transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 text-center">
+                            class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-md transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 text-center">
                             Kunjungi
                         </a>
                     </div>
@@ -112,7 +112,7 @@
                 </div>
                 <div class="p-4 flex flex-col justify-between flex-1">
                     <div>
-                        <h2 class="text-lg font-semibold mb-1 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">School Web Host</h2>
+                        <h2 class="text-lg font-semibold mb-1 text-gray-800 group-hover:text-blue-700 transition-colors duration-300">School Web Host</h2>
                         <p class="text-sm text-gray-500 min-h-[48px]">
                             Project web host dimana para siwa dan siswi dapat menghost website buatan mereka sendiri.
                         </p>
@@ -124,7 +124,7 @@
                             Repository
                         </a>
                         <a href="http://36.95.208.166:8000/" target="_blank"
-                            class="flex-1 bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-md transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 text-center">
+                            class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-md transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 text-center">
                             Kunjungi
                         </a>
                     </div>
@@ -143,7 +143,7 @@
                 </div>
                 <div class="p-4 flex flex-col justify-between flex-1">
                     <div>
-                        <h2 class="text-lg font-semibold mb-1 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">SMK Muh 04 Byl</h2>
+                        <h2 class="text-lg font-semibold mb-1 text-gray-800 group-hover:text-blue-700 transition-colors duration-300">SMK Muh 04 Byl</h2>
                         <p class="text-sm text-gray-500 min-h-[48px]">
                             Website ini dibuat pada saat lomba desain web di OlimpicAD 2023 di Bandung.
                         </p>
@@ -155,7 +155,7 @@
                             Repository
                         </a>
                         <a href="https://barkab.vercel.app/" target="_blank" aria-label="Kunjungi SMK Muh 04 Byl"
-                            class="flex-1 bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-md transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 text-center">
+                            class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-md transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 text-center">
                             Kunjungi
                         </a>
                     </div>
