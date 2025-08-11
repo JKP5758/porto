@@ -206,9 +206,11 @@
                             data-aos="zoom-in"
                             data-aos-duration="800"
                             data-aos-delay="600">
-                            <button class="w-full px-6 py-3 rounded-xl bg-zinc-100 text-zinc-800 shadow-md shadow-zinc-200 transition-all duration-300 hover:bg-zinc-200 hover:text-zinc-900 hover:shadow-zinc-400 hover:shadow-lg hover:scale-[1.03]">
-                                Lihat Selengkapnya
-                            </button>
+                            <a href="../list/" aria-label="Lihat List Project">
+                                <button class="w-full px-6 py-3 rounded-xl bg-zinc-100 text-zinc-800 shadow-md shadow-zinc-200 transition-all duration-300 hover:bg-zinc-200 hover:text-zinc-900 hover:shadow-zinc-400 hover:shadow-lg hover:scale-[1.03]">
+                                    Lihat Selengkapnya
+                                </button>
+                            </a>
                         </div>
 
 
@@ -519,7 +521,12 @@
 
 
     <section id="kontak-section" class="scroll-mt-16 py-16 px-4 relative bg-cover bg-center bg-no-repeat">
-        <div class="max-w-5xl mx-auto backdrop-blur-sm bg-white/10 border border-stone-300/20 rounded-2xl p-8 shadow-lg">
+        <!-- Background image menggunakan <img> lazy -->
+        <img src="../assets/img/bg-kontak.webp"
+             alt=""
+             loading="lazy"
+             class="absolute inset-0 w-full h-full object-cover object-center z-0 pointer-events-none opacity-100" />
+        <div class="relative z-10 max-w-5xl mx-auto backdrop-blur-sm bg-white/10 border border-stone-300/20 rounded-2xl p-8 shadow-lg">
             <h2 class="text-3xl font-bold mb-8 text-center text-gray-800 drop-shadow-md"
                 data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
@@ -567,7 +574,7 @@
                                 <img src="../assets/img/icons/whatsapp.svg" alt="WhatsApp" class="w-6 h-6" />
                                 <div>
                                     <p class="text-gray-800 font-semibold drop-shadow-sm">WhatsApp</p>
-                                    <p class="text-gray-800/90 drop-shadow-sm">+62 812-3456-7890</p>
+                                    <p class="text-gray-800/90 drop-shadow-sm">+62 823-1392-1367</p>
                                 </div>
                             </div>
                         </div>
@@ -644,25 +651,6 @@
             });
 
             observer.observe(gallery);
-        });
-
-        document.addEventListener("DOMContentLoaded", () => {
-            const kontakSection = document.getElementById("kontak-section");
-
-            if (!kontakSection) return;
-
-            const observer = new IntersectionObserver((entries, observer) => {
-                if (entries[0].isIntersecting) {
-                    kontakSection.style.backgroundImage = "url('../assets/img/bg-kontak.webp')";
-                    kontakSection.style.backgroundSize = "cover";
-                    kontakSection.style.backgroundRepeat = "no-repeat";
-                    kontakSection.style.backgroundPosition = "center";
-
-                    observer.unobserve(kontakSection); // Stop observing setelah dimuat
-                }
-            });
-
-            observer.observe(kontakSection);
         });
 
         // 🔹 Preload gambar dengan priority rendah

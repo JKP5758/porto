@@ -2,9 +2,9 @@
   <div class="relative z-10 mx-auto flex max-w-screen-lg flex-col py-4 sm:flex-row sm:items-center sm:justify-between">
 
     <!-- Logo -->
-    <div class="flex items-center text-2xl font-black text-sky-600 transition-colors duration-300 tracking-widest" href="#">
-      <span class="mr-2 text-3xl">JKP</span>
-</div>
+    <div class="flex items-center text-2xl font-black text-sky-600 transition-colors duration-300 tracking-widest">
+      <a class="mr-2 text-3xl" href="https://jkp.my.id/portofolio" aria-label="Portofolio JKP">JKP</a>
+    </div>
 
     <!-- Hamburger for mobile -->
     <input class="peer hidden" type="checkbox" id="navbar-open" />
@@ -24,22 +24,22 @@
     <nav aria-label="Header Navigation" class="peer-checked:block hidden pl-2 py-6 sm:block sm:py-0">
       <ul class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8 font-bold">
         <li>
-          <a href="../portofolio/#" class="relative inline-block text-gray-800 hover:text-sky-600 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:translate-x-[-50%] after:w-[80%] after:h-[2px] after:bg-sky-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-center">
+          <a href="../portofolio/#" aria-label="Pintasan ke menu Utama" class="relative inline-block text-gray-800 hover:text-sky-600 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:translate-x-[-50%] after:w-[80%] after:h-[2px] after:bg-sky-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-center">
             Utama
           </a>
         </li>
         <li>
-          <a href="../portofolio/#skills" class="relative inline-block text-gray-800 hover:text-sky-600 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:translate-x-[-50%] after:w-[80%] after:h-[2px] after:bg-sky-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-center">
+          <a href="../portofolio/#skills" aria-label="Pintasan ke bagian Kemampuan" class="relative inline-block text-gray-800 hover:text-sky-600 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:translate-x-[-50%] after:w-[80%] after:h-[2px] after:bg-sky-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-center">
             Kemampuan
           </a>
         </li>
         <li>
-          <a href="../portofolio/#sertifikat" class="relative inline-block text-gray-800 hover:text-sky-600 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:translate-x-[-50%] after:w-[80%] after:h-[2px] after:bg-sky-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-center">
+          <a href="../portofolio/#sertifikat" aria-label="Pintasan ke bagian Sertfikat" class="relative inline-block text-gray-800 hover:text-sky-600 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:translate-x-[-50%] after:w-[80%] after:h-[2px] after:bg-sky-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-center">
           Sertifikat
           </a>
         </li>
         <li>
-          <a href="../portofolio/#kontak-section" class="relative inline-block text-gray-800 hover:text-sky-600 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:translate-x-[-50%] after:w-[80%] after:h-[2px] after:bg-sky-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-center">
+          <a href="../portofolio/#kontak-section" aria-label="Pintasan ke bagian Kontak" class="relative inline-block text-gray-800 hover:text-sky-600 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:translate-x-[-50%] after:w-[80%] after:h-[2px] after:bg-sky-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-center">
             Kontak
           </a>
         </li>
