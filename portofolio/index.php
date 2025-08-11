@@ -62,7 +62,7 @@
                 <div class="relative overflow-hidden rounded-2xl">
 
                     <!-- Background Blur Layer -->
-                    <div class="absolute inset-0 bg-cover bg-center scale-110 bg-black/20" style="background-image: url('../assets/img/bg.webp');"></div>
+                    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../assets/img/bg.webp');"></div>
 
 
                     <!-- Hero content -->
