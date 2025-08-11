@@ -18,7 +18,7 @@
     </style>
 </head>
 
-<body class="bg-gray-100 text-gray-900">
+<body class="bg-gray-100 text-gray-950">
 
     <!-- Header -->
     <?php include '../components/header.php'; ?>
@@ -27,7 +27,7 @@
         <h1 class="text-2xl sm:text-3xl font-bold text-gray-800 flex items-center justify-center gap-2">
             <span class="text-green-500 text-xl">🧪</span> Daftar Project
         </h1>
-        <p class="text-sm text-gray-500 mt-1">Beberapa project atau code yang pernah Gua bikin.</p>
+        <p class="text-sm text-gray-700 mt-1">Beberapa project atau code yang pernah Gua bikin.</p>
     </div>
 
     <!-- Grid Container -->
@@ -36,10 +36,13 @@
 
             <!-- Card Toko Buku -->
             <div class="group bg-white rounded-2xl shadow transition-all duration-300 overflow-hidden max-w-sm w-full mx-auto flex flex-col hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02]">
-                <div class="overflow-hidden p-4">
-                    <img src="../assets/img/web-lists/toko_buku.png" alt="Thumbnail Project Toko Buku"
-                        class="w-full object-contain bg-gray-100 transition-transform duration-500 group-hover:scale-105" />
-                </div>
+                <div class="overflow-hidden p-4 rounded-lg ">
+                    <div class="bg-gray-100 aspect-[4/3] rounded-lg">
+                        <img src="../assets/img/web-lists/toko_buku.webp"
+                            alt="Thumbnail Project Toko Buku"
+                            class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105 rounded-lg " />
+                    </div>
+                </div> 
 
                 <div class="p-4 flex flex-col justify-between flex-1">
                     <div>
@@ -69,9 +72,12 @@
 
             <!-- Card Tani Berkah -->
             <div class="group bg-white rounded-2xl shadow transition-all duration-300 overflow-hidden max-w-sm w-full mx-auto flex flex-col hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02]">
-                <div class="overflow-hidden p-4">
-                    <img src="../assets/img/web-lists/pertanian.png" alt="Thumbnail Project Tani Berkah"
-                        class="w-full object-contain bg-gray-100 transition-transform duration-500 group-hover:scale-105 rounded-lg" />
+                <div class="overflow-hidden p-4 rounded-lg ">
+                    <div class="bg-gray-100 aspect-[4/3] rounded-lg ">
+                        <img src="../assets/img/web-lists/pertanian.webp"
+                            alt="Thumbnail Project Tani Berkah"
+                            class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105 rounded-lg " />
+                    </div>
                 </div>
                 <div class="p-4 flex flex-col justify-between flex-1">
                     <div>
@@ -96,9 +102,13 @@
 
             <!-- Card School Web Host -->
             <div class="group bg-white rounded-2xl shadow transition-all duration-300 overflow-hidden max-w-sm w-full mx-auto flex flex-col hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02]">
-                <div class="overflow-hidden p-4">
-                    <img src="../assets/img/web-lists/web_host.png" alt="Thumbnail Project School Web Host"
-                        class="w-full object-contain bg-gray-100 transition-transform duration-500 group-hover:scale-105 rounded-lg" />
+                <div class="overflow-hidden p-4 rounded-lg ">
+                    <div class="bg-gray-100 aspect-[4/3]">
+                        <img src="../assets/img/web-lists/web_host.webp"
+                            alt="Thumbnail Project Web Host"
+                            loading="lazy"
+                            class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105 rounded-lg " />
+                    </div>
                 </div>
                 <div class="p-4 flex flex-col justify-between flex-1">
                     <div>
@@ -123,9 +133,13 @@
 
             <!-- Card SMK Muh 04 Byl -->
             <div class="group bg-white rounded-2xl shadow transition-all duration-300 overflow-hidden max-w-sm w-full mx-auto flex flex-col hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02]">
-                <div class="overflow-hidden p-4">
-                    <img src="../assets/img/web-lists/barkab.png" alt="Thumbnail Project Olimpic AD 2023"
-                        class="w-full object-contain bg-gray-100 transition-transform duration-500 group-hover:scale-105 rounded-lg" />
+                <div class="overflow-hidden p-4 rounded-lg ">
+                    <div class="bg-gray-100 aspect-[4/3]">
+                        <img src="../assets/img/web-lists/barkab.webp"
+                            alt="Thumbnail Project SMK Muh 04 Byl"
+                            loading="lazy"
+                            class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105 rounded-lg " />
+                    </div>
                 </div>
                 <div class="p-4 flex flex-col justify-between flex-1">
                     <div>
