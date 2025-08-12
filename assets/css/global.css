@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+@source not "../../reviews/";
+@source not "../../profiles/";
+
 .nav-link {
   @apply relative text-gray-800 hover:text-sky-600 transition-colors duration-300;
 }
