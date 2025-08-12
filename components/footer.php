@@ -1,4 +1,4 @@
-<footer class="mt-20 bg-gray-900 px-6 pt-12 text-white">
+<footer class=" bg-gray-900 px-6 pt-12 text-white">
   <!-- Navigation Links -->
   <nav aria-label="Footer Navigation" class="mx-auto mb-6 flex max-w-xl flex-wrap justify-center gap-6 text-sm">
     <a href="#" class="hover:text-blue-400 transition-colors">Demo</a>
@@ -40,5 +40,14 @@
 
 
   <!-- Copyright -->
-  <p class="mt-4 pb-8 text-center text-xs text-gray-400">© 2025 JKP Project — Icon by <a href="https://icons8.com">Icons8</a> </p>
+  <p id="footer" class="mt-4 pb-8 text-center text-xs text-gray-400">
+    © <span id="year"></span> JKP Project —
+    <a href="/LICENSE" class="underline hover:text-gray-300">MIT License</a> —
+    Icon by <a href="https://icons8.com" class="underline hover:text-gray-300">Icons8</a>
+  </p>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </footer>

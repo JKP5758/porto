@@ -451,9 +451,9 @@
         </div>
     </section>
 
-
+        
     <section id="sertifikat" class="relative scroll-mt-16 py-20 px-4 bg-cover md:bg-top bg-center" style="background-image: url('../assets/img/layer-top.svg');">
-        <div class=" max-w-screen-lg mx-auto text-center">
+        <div class=" max-w-screen-lg mx-auto text-center ">
             <h2 class="text-3xl font-bold md:text-gray-800 text-stone-100 mb-2"
                 data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
@@ -522,12 +522,12 @@
 
     <section id="kontak-section" class="scroll-mt-16 py-16 px-4 relative bg-cover bg-center bg-no-repeat">
         <!-- Background image menggunakan <img> lazy -->
-        <img src="../assets/img/bg-kontak.webp"
+        <img src="../assets/img/bg-kontak.jpg"
              alt=""
              loading="lazy"
              class="absolute inset-0 w-full h-full object-cover object-center z-0 pointer-events-none opacity-100" />
-        <div class="relative z-10 max-w-5xl mx-auto backdrop-blur-sm bg-white/10 border border-stone-300/20 rounded-2xl p-8 shadow-lg">
-            <h2 class="text-3xl font-bold mb-8 text-center text-gray-800 drop-shadow-md"
+        <div class="relative z-10 max-w-5xl mx-auto backdrop-blur-sm bg-zinc-950/30 border border-stone-300/20 rounded-2xl p-8 shadow-lg">
+            <h2 class="text-3xl font-bold mb-8 text-center text-white drop-shadow-md"
                 data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-back"
                 data-aos-duration="700"
@@ -541,7 +541,7 @@
                 <!-- Kontak Langsung -->
                 <div class="space-y-6">
                     <!-- Pembuka -->
-                    <p class="text-gray-800 text-base leading-relaxed drop-shadow-sm"
+                    <p class="text-white text-base leading-relaxed drop-shadow-sm"
                         data-aos="zoom-in"
                         data-aos-duration="800"
                         data-aos-delay="200">
@@ -556,11 +556,11 @@
                             data-aos-duration="800"
                             data-aos-delay="300">
 
-                            <div class="flex items-center gap-3 p-4 rounded-lg bg-stone-300/10 border border-white/20 hover:scale-105 transition duration-300">
+                            <div class="flex items-center gap-3 p-4 rounded-lg bg-neutral-400/5 border border-white/20 hover:scale-105 transition duration-300">
                                 <img src="../assets/img/icons/gmail.svg" alt="Email" class="w-6 h-6" />
                                 <div>
-                                    <p class="text-gray-800 font-semibold drop-shadow-sm">Email</p>
-                                    <p class="text-gray-800/90 drop-shadow-sm">jokopurnomo22012006@gmail.com</p>
+                                    <p class="text-white font-semibold drop-shadow-sm">Email</p>
+                                    <p class="text-white/90 drop-shadow-sm">jokopurnomo22012006@gmail.com</p>
                                 </div>
                             </div>
                         </div>
@@ -570,11 +570,11 @@
                             data-aos-duration="800"
                             data-aos-delay="500">
 
-                            <div class="flex items-center gap-3 p-4 rounded-lg bg-stone-300/10 border border-white/20 hover:scale-105 transition duration-300">
+                            <div class="flex items-center gap-3 p-4 rounded-lg bg-neutral-400/5 border border-white/20 hover:scale-105 transition duration-300">
                                 <img src="../assets/img/icons/whatsapp.svg" alt="WhatsApp" class="w-6 h-6" />
                                 <div>
-                                    <p class="text-gray-800 font-semibold drop-shadow-sm">WhatsApp</p>
-                                    <p class="text-gray-800/90 drop-shadow-sm">+62 823-1392-1367</p>
+                                    <p class="text-white font-semibold drop-shadow-sm">WhatsApp</p>
+                                    <p class="text-white/90 drop-shadow-sm">+62 823-1392-1367</p>
                                 </div>
                             </div>
                         </div>
@@ -584,11 +584,11 @@
                             data-aos-duration="800"
                             data-aos-delay="700">
 
-                            <div class="flex items-center gap-3 p-4 rounded-lg bg-stone-300/10 border border-white/20 hover:scale-105 transition duration-300">
+                            <div class="flex items-center gap-3 p-4 rounded-lg bg-neutral-400/5 border border-white/20 hover:scale-105 transition duration-300">
                                 <img src="../assets/img/icons/github.svg" alt="GitHub" class="w-6 h-6" />
                                 <div>
-                                    <p class="text-gray-800 font-semibold drop-shadow-sm">GitHub</p>
-                                    <a href="https://github.com/JKP5758" class="text-gray-800/90 hover:underline hover:text-gray-800 drop-shadow-sm transition duration-300">
+                                    <p class="text-white font-semibold drop-shadow-sm">GitHub</p>
+                                    <a href="https://github.com/JKP5758" class="text-white/90 hover:underline hover:text-white drop-shadow-sm transition duration-300">
                                         github.com/JKP5758
                                     </a>
                                 </div>
@@ -599,23 +599,23 @@
                 </div>
 
                 <!-- Form Kontak -->
-                <form action="#" method="POST" class="space-y-4 bg-stone-300/10 border border-white/20 p-6 rounded-xl shadow"
+                <form action="#" method="POST" class="space-y-4 bg-neutral-400/5 border border-white/20 p-6 rounded-xl shadow"
                     data-aos="zoom-in"
                     data-aos-duration="2000"
                     data-aos-delay="700">
                     <div>
-                        <label class="block font-semibold mb-1 text-gray-800 drop-shadow-sm" for="name">Nama</label>
+                        <label class="block font-semibold mb-1 text-white drop-shadow-sm" for="name">Nama</label>
                         <input type="text" id="name" name="name" class="w-full p-2 rounded bg-white/70 text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50" required>
                     </div>
                     <div>
-                        <label class="block font-semibold mb-1 text-gray-800 drop-shadow-sm" for="email">Email</label>
+                        <label class="block font-semibold mb-1 text-white drop-shadow-sm" for="email">Email</label>
                         <input type="email" id="email" name="email" class="w-full p-2 rounded bg-white/70 text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50" required>
                     </div>
                     <div>
-                        <label class="block font-semibold mb-1 text-gray-800 drop-shadow-sm" for="message">Pesan</label>
+                        <label class="block font-semibold mb-1 text-white drop-shadow-sm" for="message">Pesan</label>
                         <textarea id="message" name="message" rows="4" class="w-full p-2 rounded bg-white/70 text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-white/50" required></textarea>
                     </div>
-                    <button type="submit" class="w-full  transition transform duration-300 stone-300/20  hover:from-stone-300/30 text-gray-800 font-semibold py-2 px-4 rounded-lg shadow-md ">
+                    <button type="submit" class="w-full  transition transform duration-300 bg-stone-300/10  hover:from-stone-300/30 text-white font-semibold py-2 px-4 rounded-lg shadow-md ">
                         Kirim Pesan
                     </button>
 
