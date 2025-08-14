@@ -1,14 +1,17 @@
 <footer class=" bg-gray-900 px-6 pt-12 text-white">
   <!-- Navigation Links -->
-  <nav aria-label="Footer Navigation" class="mx-auto mb-6 flex max-w-xl flex-wrap justify-center gap-6 text-sm">
+  <!-- <nav aria-label="Footer Navigation" class="mx-auto mb-6 flex max-w-xl flex-wrap justify-center gap-6 text-sm">
     <a href="#" class="hover:text-blue-400 transition-colors">Demo</a>
     <a href="#" class="hover:text-blue-400 transition-colors">Support</a>
     <a href="#" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
     <a href="#" class="hover:text-blue-400 transition-colors">Terms & Conditions</a>
-  </nav>
+  </nav> -->
+  <p class="mx-auto mb-6 max-w-xl text-center text-sm text-gray-400">
+    Terima kasih telah mengunjungi portofolio saya. Jika Anda memiliki pertanyaan atau ingin berkolaborasi, jangan ragu untuk menghubungi saya melalui media sosial yang tersedia di bawah ini.
+  </p>
 
   <!-- Decorative Line -->
-  <div class="mx-auto mb-4 w-24 border-t border-gray-700"></div>
+  <div class="mx-auto mb-4 w-64 border-t border-gray-700"></div>
 
   <!-- Sosial Media Icons -->
   <div class="flex justify-center items-center space-x-4 mt-4">

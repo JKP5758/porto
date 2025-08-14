@@ -27,7 +27,7 @@
         <h1 class="text-2xl sm:text-3xl font-bold text-gray-800 flex items-center justify-center gap-2">
             <span class="text-green-500 text-xl">🧪</span> Daftar Project
         </h1>
-        <p class="text-sm text-gray-700 mt-1">Beberapa project atau code yang pernah Gua bikin.</p>
+        <p class="text-sm text-gray-700 mt-1">Beberapa project atau code yang pernah Saya buat.</p>
     </div>
 
     <!-- Grid Container -->
@@ -103,11 +103,11 @@
             <!-- Card School Web Host -->
             <div class="group bg-white rounded-2xl shadow transition-all duration-300 overflow-hidden max-w-sm w-full mx-auto flex flex-col hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02]">
                 <div class="overflow-hidden p-4 rounded-lg ">
-                    <div class="bg-gray-100 aspect-[4/3]">
+                    <div class="bg-gray-100 aspect-[4/3] rounded-lg">
                         <img src="../assets/img/web-lists/web_host.webp"
                             alt="Thumbnail Project Web Host"
                             loading="lazy"
-                            class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105 rounded-lg " />
+                            class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105 rounded-lg" />
                     </div>
                 </div>
                 <div class="p-4 flex flex-col justify-between flex-1">
@@ -134,7 +134,7 @@
             <!-- Card SMK Muh 04 Byl -->
             <div class="group bg-white rounded-2xl shadow transition-all duration-300 overflow-hidden max-w-sm w-full mx-auto flex flex-col hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02]">
                 <div class="overflow-hidden p-4 rounded-lg ">
-                    <div class="bg-gray-100 aspect-[4/3]">
+                    <div class="bg-gray-100 aspect-[4/3] rounded-lg">
                         <img src="../assets/img/web-lists/barkab.webp"
                             alt="Thumbnail Project SMK Muh 04 Byl"
                             loading="lazy"
@@ -161,6 +161,69 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Card Game Space Action -->
+            <div class="group bg-white rounded-2xl shadow transition-all duration-300 overflow-hidden max-w-sm w-full mx-auto flex flex-col hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02]">
+                <div class="overflow-hidden p-4 rounded-lg ">
+                    <div class="bg-gray-100 aspect-[4/3] rounded-lg">
+                        <img src="../assets/img/web-lists/space-action.webp"
+                            alt="Thumbnail Game Space Action"
+                            loading="lazy"
+                            class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105 rounded-lg " />
+                    </div>
+                </div>
+                <div class="p-4 flex flex-col justify-between flex-1">
+                    <div>
+                        <h2 class="text-lg font-semibold mb-1 text-gray-800 group-hover:text-blue-700 transition-colors duration-300">Space Action</h2>
+                        <p class="text-sm text-gray-500 min-h-[48px]">
+                            Game ini dibuat pada saat saya melaksanakan PKL di Gamelab
+                        </p>
+                    </div>
+                    <!-- Tombol Aksi -->
+                    <div class="mt-4 flex gap-2">
+                        <a href="" target="_blank" aria-label="" 
+                            class=" hidden flex-1 bg-gray-900 hover:bg-black text-white text-sm font-semibold px-4 py-2 rounded-md transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 text-center">
+                            Repository
+                        </a>
+                        <a href="https://jkp5758.itch.io/spaceaction" target="_blank" aria-label="Lihat Game Space Action"
+                            class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-md transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 text-center">
+                            Kunjungi
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card Web Review Film dan Anime-->
+            <div class="group bg-white rounded-2xl shadow transition-all duration-300 overflow-hidden max-w-sm w-full mx-auto flex flex-col hover:shadow-2xl hover:-translate-y-1 hover:scale-[1.02]">
+                <div class="overflow-hidden p-4 rounded-lg ">
+                    <div class="bg-gray-100 aspect-[4/3] rounded-lg">
+                        <img src="../assets/img/web-lists/review-takopi.webp"
+                            alt="Thumbnail Website Review Takopi"
+                            loading="lazy"
+                            class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105 rounded-lg " />
+                    </div>
+                </div>
+                <div class="p-4 flex flex-col justify-between flex-1">
+                    <div>
+                        <h2 class="text-lg font-semibold mb-1 text-gray-800 group-hover:text-blue-700 transition-colors duration-300">Web Review</h2>
+                        <p class="text-sm text-gray-500 min-h-[48px]">
+                            Website tempat saya mereview film dan anime yang saya tonton (takopi no genzai)
+                        </p>
+                    </div>
+                    <!-- Tombol Aksi -->
+                    <div class="mt-4 flex gap-2">
+                        <a href="https://github.com/JKP5758/reviews" target="_blank" aria-label="Lihat Repository Web Review" 
+                            class="flex-1 bg-gray-900 hover:bg-black text-white text-sm font-semibold px-4 py-2 rounded-md transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 text-center">
+                            Repository
+                        </a>
+                        <a href="https://jkp.my.id/reviews/Takopi-no-Genzai/" target="_blank" aria-label="Lihat Review Takopi no Genzai"
+                            class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-md transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5 text-center">
+                            Kunjungi
+                        </a>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
     </main>
